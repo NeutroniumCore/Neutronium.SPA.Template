@@ -1,10 +1,12 @@
-﻿namespace Neutronium.SPA.ViewModel 
+﻿using System.Reflection;
+
+namespace Neutronium.SPA.ViewModel 
 {
     public class ApplicationInformation
     {
         public string Name => "Neutronium Vuetify SPA";
 
-        public string Version => "0.0.1";
+        public string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();;
 
         public string MadeBy => "David Desmaisons";
 
