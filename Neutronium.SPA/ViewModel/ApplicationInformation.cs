@@ -6,7 +6,7 @@ namespace Neutronium.SPA.ViewModel
     {
         public string Name => "Neutronium Vuetify SPA";
 
-        public string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();;
+        public string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
         public string MadeBy => "David Desmaisons";
 
