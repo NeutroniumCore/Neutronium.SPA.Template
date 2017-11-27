@@ -4,7 +4,6 @@ using Neutronium.SPA.Application.LifeCycleHook;
 using Neutronium.SPA.Application.Navigation;
 using Neutronium.SPA.Application.WindowServices;
 using Neutronium.SPA.ViewModel;
-using Neutronium.SPA.ViewModel.Pages;
 using Neutronium.WPF.ViewModel;
 
 namespace Neutronium.SPA 
@@ -41,7 +40,7 @@ namespace Neutronium.SPA
 
             _LifeCycleEventsRegistror = RegisterLifeCycleEvents(serviceLocator);
 
-            return application.StartRoute<MainViewModel>();
+            return application;
         }
 
         private LifeCycleEventsRegistror RegisterLifeCycleEvents(IServiceLocator serviceLocator)

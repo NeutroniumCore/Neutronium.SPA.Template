@@ -30,8 +30,11 @@ import applicationFooter from './components/applicationFooter'
 import topMenu from './components/topMenu'
 import modal from './components/modal'
 import applicationNotification from './components/applicationNotification'
-
 import {menu} from './route'
+
+import routeDefinitions from './routeDefinitions'
+const firstRouteDefinition = routeDefinitions[0]
+const firstRoute = { name: firstRouteDefinition.name }
 
 const props={
   viewModel: Object,
@@ -58,7 +61,7 @@ export default {
     }
   },
   mounted(){
-      this.$nextTick(()=> this.viewModel.Router.Route = this.$route.name);
+      (window.location.hash=='#/') && (!!(this.$route.name) || this.$router.replace(firstRoute))
   },
   methods:{
     onNotified(notification) {

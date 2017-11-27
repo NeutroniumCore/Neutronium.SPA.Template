@@ -62,11 +62,5 @@ namespace Neutronium.SPA.ViewModel
         {
             CurrentViewModel = e.NewRoute.ViewModel;
         }
-
-        public ApplicationViewModel StartRoute<T>()
-        {
-            Router.StartRoute<T>();
-            return this;
-        }
     }
 }

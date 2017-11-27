@@ -16,7 +16,7 @@ namespace Neutronium.SPA.Application.Navigation
         public string Route
         {
             get { return _Route; }
-            set { Set(ref _Route, value); }
+            private set { Set(ref _Route, value); }
         }
 
         public event EventHandler<RoutingEventArgs> OnNavigating;
@@ -101,14 +101,6 @@ namespace Neutronium.SPA.Application.Navigation
             var routeContext = new RouteContext(viewModel, routeName);
             _CurrentNavigations.Enqueue(routeContext);
             return routeContext;
-        }
-
-        internal void StartRoute<T>()
-        {
-            _ViewModel = _ServiceLocator.GetInstance<T>();
-            var route = _RouterSolver.SolveRoute<T>();
-            Route = route;
-            OnNavigated?.Invoke(this, new RoutedEventArgs(_ViewModel, route));
         }
 
         private void AfterResolve(string routeName)
