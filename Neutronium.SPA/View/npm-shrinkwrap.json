@@ -726,9 +726,9 @@
       "resolved": "https://registry.npmjs.org/cipher-base/-/cipher-base-1.0.4.tgz"
     },
     "circular-json": {
-      "version": "0.3.3",
-      "from": "circular-json@>=0.3.1 <0.4.0",
-      "resolved": "https://registry.npmjs.org/circular-json/-/circular-json-0.3.3.tgz"
+      "version": "0.5.1",
+      "from": "circular-json@>=0.5.1 <0.6.0",
+      "resolved": "https://registry.npmjs.org/circular-json/-/circular-json-0.5.1.tgz"
     },
     "clap": {
       "version": "1.2.3",

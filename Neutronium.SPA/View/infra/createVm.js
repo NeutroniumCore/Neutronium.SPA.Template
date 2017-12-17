@@ -1,5 +1,5 @@
 import CircularJson from 'circular-json'
-import {parser} from './jsonParser'
+import { parser } from './jsonParser'
 
 function updateVm(vm) {
     var window = vm.__window__
@@ -10,13 +10,13 @@ function updateVm(vm) {
     return vm;
 }
 
+CircularJson.parser = {
+    stringify: JSON.stringify,
+    parse: parser
+};
+
 function createVM(rawVm) {
-    var originalParser = JSON.parse;
-    JSON.parse = parser;
-    var res = updateVm(CircularJson.parse(rawVm));
-    JSON.parse = originalParser;
-    return res;
+    return updateVm(CircularJson.parse(rawVm));
 }
 
-
-export {createVM}
+export { createVM }
