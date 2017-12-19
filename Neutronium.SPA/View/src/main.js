@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import rawVm from '../data/vm'
-import {install, vueInstanceOption} from './install'
-import {createVM} from '../infra/createVM'
+import { install, vueInstanceOption } from './install'
+import { createVM } from 'neutronium-vm-loader'
 
 const vm = createVM(rawVm);
 
 install(Vue)
 
 var options = vueInstanceOption();
-const {router} = options;
+const { router } = options;
 router.beforeEach((to, from, next) => {
     const name = to.name;
     const vmFile = `../data/${name}/vm.cjson`
