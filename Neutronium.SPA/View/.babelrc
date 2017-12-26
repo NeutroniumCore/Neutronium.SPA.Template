@@ -1,11 +1,13 @@
 {
   "presets": [
-    ["es2015", { "modules": false }],
-    "stage-2"
+    ["env", {
+      "targets": {
+        "chrome": "56"
+      }
+    }]
   ],
   "plugins": [
     ["syntax-dynamic-import"],
-    ["transform-runtime"],
     ["transform-imports", {
       "vuetify": {
         "transform": "vuetify/es5/components/${member}",

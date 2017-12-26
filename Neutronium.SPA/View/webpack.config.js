@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var utils = require('./utils')
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
+const BabiliPlugin = require("babili-webpack-plugin")
 
 var output={
     path: path.resolve(__dirname, './dist'),
@@ -98,7 +99,7 @@ if (process.env.NODE_ENV === 'production') {
   }
   webpackOptions.entry= './src/entry.js';
 
-  webpackOptions.devtool = '#source-map'
+  webpackOptions.devtool = '#cheap-source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   webpackOptions.plugins = (webpackOptions.plugins || []).concat([
     new webpack.DefinePlugin({
@@ -107,11 +108,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }),
+    new BabiliPlugin({}, { comments: false }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
