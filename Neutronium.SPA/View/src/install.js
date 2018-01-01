@@ -3,9 +3,9 @@ import 'material-design-icons/iconfont/material-icons.css'
 import 'font-awesome/css/font-awesome.css'
 
 import Vue_Router from 'vue-router'
-import {router} from './route'
+import { router } from './route'
 import VueI18n from 'vue-i18n'
-import messages from  './message'
+import messages from './message'
 import Notifications from 'vue-notification'
 
 import {
@@ -25,26 +25,26 @@ import {
     VDialog,
     VTextField,
     transitions
-  } from 'vuetify'
+} from 'vuetify'
 
 function install(Vue) {
     Vue.use(Vuetify, {
         components: {
-          VApp,
-          VAlert,
-          VCheckBox,
-          VDivider,
-          VNavigationDrawer,
-          VFooter,
-          VList,
-          VBtn,
-          VIcon,
-          VGrid,
-          VToolbar,
-          VCard,
-          VDialog,
-          VTextField,
-          transitions
+            VApp,
+            VAlert,
+            VCheckBox,
+            VDivider,
+            VNavigationDrawer,
+            VFooter,
+            VList,
+            VBtn,
+            VIcon,
+            VGrid,
+            VToolbar,
+            VCard,
+            VDialog,
+            VTextField,
+            transitions
         }
     })
 
@@ -53,7 +53,7 @@ function install(Vue) {
     Vue.use(Notifications)
 }
 
-function vueInstanceOption() {
+function vueInstanceOption(vm) {
     const i18n = new VueI18n({
         locale: 'en-US', // set locale
         messages // set locale messages
