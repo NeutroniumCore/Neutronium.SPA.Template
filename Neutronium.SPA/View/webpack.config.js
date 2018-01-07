@@ -108,7 +108,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    new BabiliPlugin({}, { comments: false }),
+    new BabiliPlugin({}, { comments: false, sourceMap:true }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })

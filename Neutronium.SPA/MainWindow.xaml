@@ -9,6 +9,7 @@
         mc:Ignorable="d"
         Icon="Content\logo.png"
         MinWidth="1400"
+        Width ="1500"
         Height="940"
         BorderThickness="1"
         Title="MainWindow">
