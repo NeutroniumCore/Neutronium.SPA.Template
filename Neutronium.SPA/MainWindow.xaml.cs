@@ -17,8 +17,14 @@ namespace Neutronium.SPA
 
         public MainWindow()
         {
+            this.Initialized += MainWindow_Initialized;
             InitializeComponent();
+        }
+
+        private void MainWindow_Initialized(object sender, EventArgs e)
+        {
             DataContext = BuildApplicationViewModel();
+            Initialized -= MainWindow_Initialized;
         }
 
         private ApplicationViewModel BuildApplicationViewModel()
