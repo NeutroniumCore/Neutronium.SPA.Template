@@ -153,6 +153,7 @@
     <Compile Include="Application\Navigation\RoutedEventArgs.cs" />
     <Compile Include="Application\Navigation\RouterBuilderExtensions.cs" />
     <Compile Include="Application\Navigation\RoutingEventArgs.cs" />
+    <Compile Include="App_Start\ApplicationViewModelBuilder.cs" />
     <Compile Include="App_Start\IDependencyInjectionConfiguration.cs" />
     <Compile Include="Application\WindowServices\IMessageBox.cs" />
     <Compile Include="Application\WindowServices\ConfirmationMessage.cs" />

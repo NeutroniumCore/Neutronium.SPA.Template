@@ -8,7 +8,7 @@
         xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         mc:Ignorable="d"
         Icon="Content\logo.png"
-        MinWidth="1400"
+        MinWidth="1000"
         Width ="1500"
         Height="940"
         BorderThickness="1"
