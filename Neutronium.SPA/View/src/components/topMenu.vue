@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar id="top-menu"  app >
+    <v-toolbar id="top-menu"  :clipped-left="true" absolute app>
 
         <v-toolbar-side-icon @click.stop="toggleMenu"></v-toolbar-side-icon>
 

@@ -11,6 +11,7 @@
         MinWidth="1000"
         Width ="1500"
         Height="940"
+        Name="Root"
         BorderThickness="1"
         Title="MainWindow">
     <i:Interaction.Behaviors>
@@ -18,7 +19,7 @@
     </i:Interaction.Behaviors>
     <Grid>
 
-        <WPF:HTMLViewControl x:Name="HtmlView" IsDebug="True" Uri="pack://application:,,,/View/dist/index.html" />
+        <WPF:HTMLViewControl x:Name="HtmlView" IsDebug="{Binding ElementName=Root, Path=Debug}" Uri="{Binding ElementName=Root, Path=Uri}"  />
 
     </Grid>
     <Window.Visibility>

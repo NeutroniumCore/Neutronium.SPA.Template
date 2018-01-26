@@ -10,6 +10,9 @@ namespace Neutronium.SPA
     {
         private ApplicationViewModelBuilder _ApplicationViewModelBuilder;
 
+        public bool Debug => App.MainApplication.Debug;
+        public Uri Uri => App.MainApplication.Uri;
+
         public MainWindow()
         {
             this.Initialized += MainWindow_Initialized;

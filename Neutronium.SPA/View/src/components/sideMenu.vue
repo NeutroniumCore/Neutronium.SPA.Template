@@ -9,12 +9,6 @@
       app
     >
 
-    <v-toolbar>
-        <v-btn icon @click.stop="mini =!mini" small>
-            <v-icon v-html="mini ? 'chevron_right' : 'chevron_left'"></v-icon>
-        </v-btn>
-    </v-toolbar>
-
     <v-divider></v-divider>
 
       <v-list>
