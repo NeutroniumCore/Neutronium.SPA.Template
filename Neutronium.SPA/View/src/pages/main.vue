@@ -1,7 +1,7 @@
 <template>
     <main>
       <v-content>
-        <v-container fluid>
+        <v-container fluid class="main-container">
 
         <v-layout>
           <v-flex xs12 sm6 offset-sm3>
@@ -40,6 +40,14 @@ export default {
 </script>
 
 <style>
+main {
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+  overflow-y: auto;
+}
 </style>
 
 
