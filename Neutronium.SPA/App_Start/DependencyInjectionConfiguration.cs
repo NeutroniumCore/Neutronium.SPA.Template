@@ -23,7 +23,7 @@ namespace Neutronium.SPA
             _ServiceLocator = new Lazy<IServiceLocator>(() => new NinjectServiceLocator(_Kernel));
         }
 
-        public IServiceLocator GetServiceLocator() => _ServiceLocator.Value;
+        public Lazy<IServiceLocator> GetServiceLocator() => _ServiceLocator;
 
         public void Register<T>(T implementation) => _Kernel.Bind<T>().ToConstant(implementation);
 
