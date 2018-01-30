@@ -1,12 +1,12 @@
 <p align="center"><img width="100" src="https://raw.githubusercontent.com/NeutroniumCore/neutronium-vue/master/template/src/assets/logo.png"></p>
-<h1 align="center">Neutronium.SPA.Demo</h1>
+<h1 align="center">Neutronium.SPA.Template</h1>
 
 
-[![MIT License](https://img.shields.io/github/license/NeutroniumCore/Neutronium.SPA.Demo.svg)](https://github.com/NeutroniumCore/Neutronium.SPA.Demo/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/NeutroniumCore/Neutronium.Template.Demo.svg)](https://github.com/NeutroniumCore/Neutronium.Template.Demo/blob/master/LICENSE)
 
 ## Description
 
-This project is a template application for Neutronium SPA.<br>
+This project is a template application for Neutronium Template.<br>
 See [Neutronium.SPA.Demo](https://github.com/NeutroniumCore/Neutronium.SPA.Demo) as reference.
 
 ## Built with
