@@ -2,7 +2,7 @@
 <h1 align="center">Neutronium.SPA.Template</h1>
 
 
-[![MIT License](https://img.shields.io/github/license/NeutroniumCore/Neutronium.Template.Demo.svg)](https://github.com/NeutroniumCore/Neutronium.Template.Demo/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/NeutroniumCore/Neutronium.SPA.Template.svg)](https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/LICENSE)
 
 ## Description
 
