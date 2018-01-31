@@ -30,26 +30,6 @@ See more details [here](./Documentation/Chromeless.md)
 
 See more details [here](./Documentation/Developing.md)
 
-
-## Built with
-
-<p style="margin-left:100px;" align="">
-<a href="https://vuetifyjs.com">
-<img src="./Neutronium.SPA.Demo/View/Main/src/assets/v.png" height="50px">
-</a>
-<a href="https://github.com/NeutroniumCore/Neutronium">
-<img src="https://raw.githubusercontent.com/NeutroniumCore/neutronium-vue/master/template/src/assets/logo.png" height="50px">
-</a>
-<a href="https://vuejs.org">
-<img src="https://vuejs.org/images/logo.png" height="50px">
-</a>
-</p>
-
-
-
-
-
-
 ## Built with
 
 <p style="margin-left:100px;" align="">
