@@ -4,7 +4,12 @@ import rawVm from '../data/vm'
 import { install, vueInstanceOption } from './install'
 import { createVM } from 'neutronium-vm-loader'
 
-const vm = createVM(rawVm);
+const vm = updateVM(rawVm);
+
+function updateVM(raw) {
+    const vm = createVM(raw);
+    return Object.assign(vm, {ViewModel: {Router: {BeforeResolveCommand: null} } });
+}
 
 install(Vue)
 
@@ -14,7 +19,7 @@ router.beforeEach((to, from, next) => {
     const name = to.name;
     const vmFile = `../data/${name}/vm.cjson`
     import(`../data/${name}/vm.cjson`).then(module => {
-        const newVm = createVM(module);
+        const newVm = updateVM(module);
         router.app.ViewModel.CurrentViewModel = newVm.ViewModel.CurrentViewModel;
         next();
     }).catch(error => {
