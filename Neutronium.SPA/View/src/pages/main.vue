@@ -45,7 +45,7 @@ main {
 }
 
 .main-container {
-  height: 100%;
+  height: calc(100% - 50px);
   overflow-y: auto;
 }
 </style>

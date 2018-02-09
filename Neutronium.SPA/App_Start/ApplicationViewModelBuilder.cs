@@ -18,18 +18,19 @@ namespace Neutronium.SPA
             var window = new WindowViewModel(wpfWindow);
             var routeSolver = RoutingConfiguration.Register();
             var serviceLocatorBuilder = new DependencyInjectionConfiguration();
-            var serviceLocator = serviceLocatorBuilder.GetServiceLocator();
+            var serviceLocatorLazy = serviceLocatorBuilder.GetServiceLocator();
 
-            var navigation = NavigationViewModel.Create(serviceLocator, routeSolver);
+            var navigation = NavigationViewModel.Create(serviceLocatorLazy, routeSolver);
 
             serviceLocatorBuilder.Register<IWindowViewModel>(window);
             serviceLocatorBuilder.Register<INavigator>(navigation);
             serviceLocatorBuilder.Register(navigation);
 
-            ApplicationViewModel = serviceLocator.GetInstance<ApplicationViewModel>();
+            ApplicationViewModel = new ApplicationViewModel(window, navigation);
             serviceLocatorBuilder.Register<IMessageBox>(ApplicationViewModel);
             serviceLocatorBuilder.Register<INotificationSender>(ApplicationViewModel);
 
+            var serviceLocator = serviceLocatorLazy.Value;
             _LifeCycleEventsRegistror = RegisterLifeCycleEvents(serviceLocator);
         }
 

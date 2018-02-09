@@ -11,7 +11,8 @@ namespace Neutronium.SPA.Application.Navigation
 
         public IRouterBuilder Register(Type type, string routerName, bool defaultType = true)
         {
-            _TypeToRoute.Add(type, routerName);
+            if (!_TypeToRoute.ContainsKey(type))
+                _TypeToRoute.Add(type, routerName);     
 
             if (!defaultType && _RouteToType.ContainsKey(routerName))
                 return this;

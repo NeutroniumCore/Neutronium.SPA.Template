@@ -1,10 +1,11 @@
-﻿using Microsoft.Practices.ServiceLocation;
+﻿using System;
+using Microsoft.Practices.ServiceLocation;
 
 namespace Neutronium.SPA 
 {
     public interface IDependencyInjectionConfiguration 
     {
-        IServiceLocator GetServiceLocator();
+        Lazy<IServiceLocator> GetServiceLocator();
 
         void Register<T>(T implementation);
     }
