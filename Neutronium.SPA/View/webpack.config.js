@@ -6,7 +6,7 @@ const BabiliPlugin = require("babili-webpack-plugin")
 
 var output = {
   path: path.resolve(__dirname, './dist'),
-  filename: 'build.js'
+  filename: '[name].js'
 };
 
 var resolve = (p) => path.resolve(__dirname, p)
@@ -85,7 +85,8 @@ var webpackOptions = {
     }
   },
   plugins: [
-    new ExtractTextPlugin('styles.css')
+      new ExtractTextPlugin('styles.css'),
+      new webpack.EnvironmentPlugin(['NODE_ENV'])
   ],
   devtool: 'source-map',
 }
@@ -98,16 +99,13 @@ switch (process.env.NODE_ENV) {
       'vue': 'Vue',
       'vueHelper': 'glueHelper'
     }
-    webpackOptions.entry = './src/entry.js';
+    webpackOptions.entry = {
+        build: './src/entry.js'
+    };
 
     webpackOptions.devtool = '#cheap-source-map'
     // http://vue-loader.vuejs.org/en/workflow/production.html
     webpackOptions.plugins = (webpackOptions.plugins || []).concat([
-      new webpack.DefinePlugin({
-        'process.env': {
-          NODE_ENV: '"production"'
-        }
-      }),
       new webpack.optimize.ModuleConcatenationPlugin(),
       new BabiliPlugin({}, { comments: false }),
       new webpack.LoaderOptionsPlugin({
@@ -118,26 +116,31 @@ switch (process.env.NODE_ENV) {
 
   case 'development':
     webpackOptions.plugins = (webpackOptions.plugins || []).concat([
-      new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin()
     ]);
 
     webpackOptions.resolve.alias = {
       'vue$': 'vue/dist/vue'
     }
-    webpackOptions.entry = './src/main.js';
+    webpackOptions.entry = {
+        build: './src/main.js',
+        debug: './src/debug.js'
+    };
     break;
 
   case 'integrated':
     webpackOptions.plugins = (webpackOptions.plugins || []).concat([
-      new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin()
     ]);
 
     webpackOptions.externals = {
       'vue': 'Vue',
       'vueHelper': 'glueHelper'
     }
-    webpackOptions.entry = './src/integrated.js';
-    break;
+    webpackOptions.entry = {
+        build: './src/integrated.js',
+        debug: './src/debug.js'
+    };
 }
 const styleOption = buildMode ? { sourceMap: true, extract: true } : { sourceMap: true };
 webpackOptions.module.rules = webpackOptions.module.rules.concat(utils.styleLoaders(styleOption))

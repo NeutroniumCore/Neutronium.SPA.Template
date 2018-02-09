@@ -274,6 +274,7 @@
     <Resource Include="View\src\assets\logo.png" />
     <Resource Include="View\src\assets\favicon-32x32.png" />
     <Resource Include="View\src\assets\v.png" />
+    <Content Include="View\src\debug.js" />
     <Content Include="View\src\entry.js" />
     <Content Include="View\src\install.js" />
     <Content Include="View\src\integrated.js" />
