@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve ./src/main.js --open --port 9000",
-    "build": "vue-cli-service build --target lib --name build --entry ./src/entry.js --no-clean",
+    "build": "vue-cli-service build --entry ./src/entry.js",
     "lint": "vue-cli-service lint",
     "live": "vue-cli-service serve ./src/integrated.js --port 8080 --mode production",
     "test:unit": "vue-cli-service test:unit"
