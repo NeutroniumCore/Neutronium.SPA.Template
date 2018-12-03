@@ -5,22 +5,21 @@
 </template>
 
 <script>
-const props ={
-    fixed:{
-      type: Boolean,
-      default: false
-    },
-	year:{
-      type: Number,
-      required: false
-	}
-}
+const props = {
+  fixed: {
+    type: Boolean,
+    default: false
+  },
+  year: {
+    type: Number,
+    required: false
+  }
+};
 
 export default {
-    props
-}
+  props
+};
 </script>
 
 <style>
 </style>
-

@@ -20,50 +20,52 @@
 </template>
 
 <script>
-import iconButton from './IconButton'
+import iconButton from "./iconButton";
 
 const props = {
-    value:{
-      type: Boolean,
-      required: true
-    },
-    title:{
-      type: String,
-      required: false
-    },
-    window:{
-      type: Object,
-      required: true
-    }
-}
+  value: {
+    type: Boolean,
+    required: true
+  },
+  title: {
+    type: String,
+    required: false
+  },
+  window: {
+    type: Object,
+    required: true
+  }
+};
 
 export default {
-    props,
+  props,
 
-    components:{
-        iconButton
-    },
+  components: {
+    iconButton
+  },
 
-    computed:{
-        middleIcon(){
-            return (this.window.State.displayName == 'Normal') ? 'fa-window-maximize' : 'fa-window-restore'
-        }
-    },
-
-    methods:{
-        toggleMenu(){
-            this.$emit('input', !this.value)
-        }
+  computed: {
+    middleIcon() {
+      return this.window.State.displayName == "Normal"
+        ? "fa-window-maximize"
+        : "fa-window-restore";
     }
-}
+  },
+
+  methods: {
+    toggleMenu() {
+      this.$emit("input", !this.value);
+    }
+  }
+};
 </script>
 
 <style>
-#top-menu > div{
+#top-menu > div {
   -webkit-app-region: drag;
 }
 
-#top-menu > div > button{
+#top-menu > div > button {
   -webkit-app-region: no-drag;
 }
 </style>

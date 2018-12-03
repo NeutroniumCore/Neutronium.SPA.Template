@@ -16,27 +16,26 @@
 </template>
 
 <script>
-import textButton from '../components/textButton'
-import iconButton from '../components/IconButton'
+import textButton from "../components/textButton";
+import iconButton from "../components/iconButton";
 
-const props={
-  viewModel: Object,
-}
+const props = {
+  viewModel: Object
+};
 
 export default {
-  components:{
+  components: {
     textButton,
     iconButton
   },
-  methods:{
-    enter(){
+  methods: {
+    enter() {
       const command = this.viewModel.AddItem;
-      if (command)
-        command.Execute()
+      if (command) command.Execute();
     }
   },
   props
-}
+};
 </script>
 
 <style>
@@ -49,7 +48,3 @@ main {
   overflow-y: auto;
 }
 </style>
-
-
-
-

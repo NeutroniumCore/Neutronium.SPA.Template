@@ -24,62 +24,60 @@
 </template>
 
 <script>
+import sideMenu from "./components/sideMenu";
+import applicationFooter from "./components/applicationFooter";
+import topMenu from "./components/topMenu";
+import modal from "./components/modal";
+import applicationNotification from "./components/applicationNotification";
+import { menu } from "./route";
 
-import sideMenu from './components/sideMenu'
-import applicationFooter from './components/applicationFooter'
-import topMenu from './components/topMenu'
-import modal from './components/modal'
-import applicationNotification from './components/applicationNotification'
-import {menu} from './route'
+import routeDefinitions from "./routeDefinitions";
+const firstRouteDefinition = routeDefinitions[0];
+const firstRoute = { name: firstRouteDefinition.name };
 
-import routeDefinitions from './routeDefinitions'
-const firstRouteDefinition = routeDefinitions[0]
-const firstRoute = { name: firstRouteDefinition.name }
-
-const props={
+const props = {
   viewModel: Object,
   __window__: Object
 };
 
 export default {
-  components:{
-      sideMenu,
-      applicationFooter,
-      topMenu,
-      modal,
-      applicationNotification
+  components: {
+    sideMenu,
+    applicationFooter,
+    topMenu,
+    modal,
+    applicationNotification
   },
-  name: 'app',
+  name: "app",
   props,
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
-      modal:false,
+      modal: false,
       menu
-    }
+    };
   },
-  mounted(){
-      (window.location.hash=='#/') && (!!(this.$route.name) || this.$router.replace(firstRoute))
+  mounted() {
+    window.location.hash == "#/" &&
+      (!!this.$route.name || this.$router.replace(firstRoute));
   },
-  methods:{
-    onNotified(notification) {
-    }
+  methods: {
+    onNotified(notification) {}
   },
-  watch:{
-    'viewModel.Router.Route': function(name){
-      if (name)
-        this.$router.push({name});
+  watch: {
+    "viewModel.Router.Route": function(name) {
+      if (name) this.$router.push({ name });
     },
-    'viewModel.Modal': function(value){
-      this.modal = (value!= null)
+    "viewModel.Modal": function(value) {
+      this.modal = value != null;
     },
-    'viewModel.Notification': function(value) {
-      this.$refs['notification'].showMessage(value)
+    "viewModel.Notification": function(value) {
+      this.$refs["notification"].showMessage(value);
     }
   }
-}
+};
 </script>
 
 <style lang="stylus">

@@ -15,38 +15,38 @@
 
 <script>
 const icons = {
-  error: 'warning',
-  warning: 'priority_high',
-  info: 'info',
-  success: 'check_circle'
-}
+  error: "warning",
+  warning: "priority_high",
+  info: "info",
+  success: "check_circle"
+};
 
 export default {
-    methods: {
+  methods: {
     showMessage(message) {
       const notification = {
         title: message.Title,
         type: message.Type,
         text: message.Content,
-        duration: message.duration || (message.Type === 'error') ? -1 : 4000,
-        group: 'app'
-      }
+        duration: message.duration || message.Type === "error" ? -1 : 4000,
+        group: "app"
+      };
       this.$notify(notification);
-      this.$emit('notified', notification)
+      this.$emit("notified", notification);
     },
     icon(type) {
-      return icons[type] || icons.information
+      return icons[type] || icons.information;
     }
   }
-}
+};
 </script>
 
 <style>
-.application-notifications p{
+.application-notifications p {
   overflow-wrap: break-word;
 }
 
-.application-notifications div{
+.application-notifications div {
   overflow-y: auto;
 }
 </style>

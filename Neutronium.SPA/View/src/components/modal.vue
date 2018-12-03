@@ -13,36 +13,35 @@
 </template>
 
 <script>
-import textButton from '../components/textButton'
+import textButton from "../components/textButton";
 
-
-const props={
-    value:{
-        type:Boolean,
-        default:true
-    },
-    viewModel:{
-        required:true
-    }
-}
+const props = {
+  value: {
+    type: Boolean,
+    default: true
+  },
+  viewModel: {
+    required: true
+  }
+};
 
 export default {
-  components:{
-      textButton
+  components: {
+    textButton
   },
   props,
-  methods:{
-      close(){
-          this.$emit('input',false);
-      },
-      valueChanged(value){
-          this.$emit('input',value);
-      }
+  methods: {
+    close() {
+      this.$emit("input", false);
+    },
+    valueChanged(value) {
+      this.$emit("input", value);
+    }
   }
-}
+};
 </script>
 <style>
-    .application-modal div {
-        word-wrap: break-word;
-    }
+.application-modal div {
+  word-wrap: break-word;
+}
 </style>
