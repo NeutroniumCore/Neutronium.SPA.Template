@@ -64,6 +64,7 @@ export default {
       (!!this.$route.name || this.$router.replace(firstRoute));
   },
   methods: {
+    /*eslint no-unused-vars: ["error", { "args": "none" }]*/
     onNotified(notification) {}
   },
   watch: {

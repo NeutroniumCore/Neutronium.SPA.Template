@@ -40,6 +40,7 @@ function getRouterViewModel(router) {
   return viewModel.Router;
 }
 
+/*eslint no-unused-vars: ["error", { "args": "none" }]*/
 router.beforeEach((to, from, next) => {
   const routerViewModel = getRouterViewModel(router);
   if (!routerViewModel) {
@@ -71,6 +72,7 @@ router.beforeEach((to, from, next) => {
   );
 });
 
+/*eslint no-unused-vars: ["error", { "args": "none" }]*/
 router.afterEach((to, from, next) => {
   const routerViewModel = getRouterViewModel(router);
   if (!routerViewModel) {

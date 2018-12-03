@@ -7,8 +7,7 @@ import VueI18n from "vue-i18n";
 import messages from "./message";
 import Notifications from "vue-notification";
 
-import
-  Vuetify, {
+import Vuetify, {
   VApp,
   VAlert,
   VCard,
@@ -68,7 +67,6 @@ function install(Vue) {
       VImg,
       VGrid,
       VToolbar,
-      VCard,
       VDialog,
       VTextField,
       VToolbarSideIcon,
@@ -83,6 +81,7 @@ function install(Vue) {
   Vue.use(Notifications);
 }
 
+/*eslint no-unused-vars: ["error", { "args": "none" }]*/
 function vueInstanceOption(vm) {
   const i18n = new VueI18n({
     locale: "en-US", // set locale

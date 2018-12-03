@@ -16,18 +16,12 @@
 </template>
 
 <script>
-import textButton from "../components/textButton";
-import iconButton from "../components/iconButton";
-
 const props = {
   viewModel: Object
 };
 
 export default {
-  components: {
-    textButton,
-    iconButton
-  },
+  components: {},
   methods: {
     enter() {
       const command = this.viewModel.AddItem;
