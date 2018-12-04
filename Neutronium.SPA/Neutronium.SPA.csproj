@@ -224,11 +224,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="View\.babelrc" />
+    <None Include="View\.browserslistrc" />
     <None Include="View\data\about\vm.cjson" />
     <None Include="View\data\main\vm.cjson" />
     <None Include="View\data\vm.cjson" />
-    <Resource Include="View\dist\build.js.map" />
+    <Resource Include="View\dist\js\app.js.map" />
+    <Resource Include="View\dist\js\chunk-vendors.js.map" />
     <None Include="View\package-lock.json" />
     <None Include="View\src\components\applicationFooter.vue" />
     <None Include="View\src\components\applicationNotification.vue" />
@@ -246,15 +247,6 @@
     <None Include="View\src\pages\main.vue" />
     <None Include="View\src\stylus\main.styl" />
     <None Include="View\src\stylus\theme.styl" />
-    <Resource Include="View\dist\styles.css.map" />
-    <Resource Include="View\dist\012cf6a10129e2275d79d6adac7f3b02.woff" />
-    <Resource Include="View\dist\570eb83859dc23dd0eec423a49e147fe.woff2" />
-    <Resource Include="View\dist\674f50d287a8c48dc19ba404d20fe713.eot" />
-    <Resource Include="View\dist\a37b0c01c0baf1888ca812cc0508f6e2.ttf" />
-    <Resource Include="View\dist\af7ae505a9eed503f8b8e6982036873e.woff2" />
-    <Resource Include="View\dist\b06871f281fee6b241d60582ae9369b9.ttf" />
-    <Resource Include="View\dist\e79bfd88537def476913f3ed52f4f4b3.eot" />
-    <Resource Include="View\dist\fee66e712a8a08eef5805a46892932ad.woff" />
     <None Include="View\package.json" />
     <None Include="View\README.md" />
     <None Include="View\src\App.vue" />
@@ -266,17 +258,22 @@
     <Content Include="Content\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="View\.eslintrc.js" />
     <Content Include="View\.gitignore" />
-    <Resource Include="View\dist\810a1b930979de83478be0f458b51dd8.png" />
-    <Resource Include="View\dist\build.js" />
     <Resource Include="View\dist\index.html" />
-    <Resource Include="View\dist\styles.css" />
-    <Resource Include="View\dist\912ec66d7572ff821749319396470bde.svg" />
-    <Content Include="View\index.html" />
+    <Resource Include="View\dist\favicon.ico" />
     <Resource Include="View\src\assets\logo.png" />
-    <Resource Include="View\src\assets\favicon-32x32.png" />
-    <Resource Include="View\src\assets\v.png" />
-    <Content Include="View\src\debug.js" />
+    <Content Include="View\babel.config.js" />
+    <Resource Include="View\dist\css\app.css" />
+    <Resource Include="View\dist\css\chunk-vendors.css" />
+    <Resource Include="View\dist\img\fontawesome-webfont.svg" />
+    <Resource Include="View\dist\js\app.js" />
+    <Resource Include="View\dist\js\chunk-vendors.js" />
+    <Content Include="View\vue.config.js" />
+    <Content Include="View\jest.config.js" />
+    <Content Include="View\postcss.config.js" />
+    <Resource Include="View\public\favicon.ico" />
+    <Content Include="View\public\index.html" />
     <Content Include="View\src\entry.js" />
     <Content Include="View\src\install.js" />
     <Content Include="View\src\integrated.js" />
@@ -287,8 +284,8 @@
     </Content>
     <Content Include="View\src\route.js" />
     <Content Include="View\src\routeDefinitions.js" />
-    <Content Include="View\utils.js" />
-    <Content Include="View\webpack.config.js" />
+    <Content Include="View\tests\unit\.eslintrc.js" />
+    <Content Include="View\tests\unit\example.spec.js" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
