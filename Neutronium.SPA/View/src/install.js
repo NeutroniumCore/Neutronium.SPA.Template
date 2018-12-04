@@ -35,8 +35,7 @@ import Vuetify, {
   VTextField,
   VToolbarSideIcon,
   VToolbarTitle,
-  VSpacer,
-  transitions
+  VSpacer
 } from "vuetify/lib";
 
 function install(Vue) {
@@ -69,8 +68,7 @@ function install(Vue) {
       VTextField,
       VToolbarSideIcon,
       VToolbarTitle,
-      VSpacer,
-      transitions
+      VSpacer
     }
   });
 
