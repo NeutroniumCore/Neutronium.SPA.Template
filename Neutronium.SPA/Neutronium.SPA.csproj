@@ -277,7 +277,6 @@
     <Resource Include="View\dist\css\app.css" />
     <Resource Include="View\dist\css\chunk-vendors.css" />
     <Resource Include="View\dist\img\fontawesome-webfont.svg" />
-    <Resource Include="View\dist\img\logo.png" />
     <Resource Include="View\dist\js\app.js" />
     <Resource Include="View\dist\js\chunk-vendors.js" />
     <Content Include="View\vue.config.js" />
