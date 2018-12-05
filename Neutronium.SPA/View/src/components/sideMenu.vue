@@ -30,38 +30,36 @@
 
 <script>
 const props = {
-    items:{
-        type: Array,
-        required: true
-    },
-    value:{
-      type: Boolean
-    },
-    clipped:{
-      type: Boolean,
-      default: true
-    }
-}
+  items: {
+    type: Array,
+    required: true
+  },
+  value: {
+    type: Boolean
+  },
+  clipped: {
+    type: Boolean,
+    default: true
+  }
+};
 
 export default {
-    props,
-    data(){
-      return {
-        mini: true
-      }
-    },
-    methods:{
-      drawerChanged(value) {
-        this.$emit('input', value)
-      }
-    }  
-}
+  props,
+  data() {
+    return {
+      mini: true
+    };
+  },
+  methods: {
+    drawerChanged(value) {
+      this.$emit("input", value);
+    }
+  }
+};
 </script>
 
 <style>
-#side-menu button{
+#side-menu button {
   -webkit-app-region: no-drag;
 }
 </style>
-
-

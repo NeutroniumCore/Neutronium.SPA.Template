@@ -3,8 +3,8 @@
         <v-content>
             <v-flex xs12 sm6 offset-sm3>
             <v-card>
-                <v-card-media :src="require('../assets/logo.png')" height="200px" contain>
-                </v-card-media>
+                <v-img :src="require('../assets/logo.png')" height="200px" contain>
+                </v-img>
                 <v-card-title primary-title>
                 <div>
                     <h3 class="headline mb-0 blue--text">{{viewModel.Information.Name}} {{$t("Resource.MadeBy")}} {{viewModel.Information.MadeBy}}</h3>
@@ -39,5 +39,4 @@ export default {
 </script>
 
 <style>
-
 </style>

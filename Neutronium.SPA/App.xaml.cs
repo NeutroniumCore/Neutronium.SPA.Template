@@ -30,6 +30,7 @@ namespace Neutronium.SPA
         protected override void UpdateLineCommandArg(CfxOnBeforeCommandLineProcessingEventArgs beforeLineCommand)
         {
             beforeLineCommand.CommandLine.AppendSwitch("disable-gpu");
+            beforeLineCommand.CommandLine.AppendSwitch("disable-web-security");          
         }
 
         protected override void OnStartUp(IHTMLEngineFactory factory)
