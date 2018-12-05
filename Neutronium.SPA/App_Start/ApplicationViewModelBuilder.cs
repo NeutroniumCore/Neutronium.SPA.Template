@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using Microsoft.Practices.ServiceLocation;
+using CommonServiceLocator;
 using Neutronium.SPA.Application.LifeCycleHook;
 using Neutronium.SPA.Application.Navigation;
 using Neutronium.SPA.Application.WindowServices;

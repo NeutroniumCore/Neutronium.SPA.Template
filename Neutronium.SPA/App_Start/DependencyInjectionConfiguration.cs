@@ -1,8 +1,8 @@
 ﻿using System;
-using CommonServiceLocator.NinjectAdapter.Unofficial;
-using Microsoft.Practices.ServiceLocation;
+using CommonServiceLocator;
 using Neutronium.Core.WebBrowserEngine.Window;
 using Neutronium.SPA.Application.LifeCycleHook;
+using Neutronium.SPA.ServiceLocator;
 using Neutronium.SPA.ViewModel.Pages;
 using Neutronium.WPF.Internal;
 using Ninject;
