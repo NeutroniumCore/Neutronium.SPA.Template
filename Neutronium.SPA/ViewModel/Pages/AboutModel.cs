@@ -1,4 +1,6 @@
-﻿namespace Neutronium.SPA.ViewModel.Pages 
+﻿using Vm.Tools.Application.ViewModel;
+
+namespace Neutronium.SPA.ViewModel.Pages 
 {
     public class AboutViewModel 
     {

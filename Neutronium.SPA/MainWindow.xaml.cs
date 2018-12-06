@@ -1,5 +1,5 @@
 ﻿using System;
-using Neutronium.SPA.ViewModel;
+using Vm.Tools.Application.ViewModel;
 
 namespace Neutronium.SPA 
 {

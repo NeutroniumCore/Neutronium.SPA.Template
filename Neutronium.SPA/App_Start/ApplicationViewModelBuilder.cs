@@ -1,10 +1,10 @@
 ﻿using System.Windows;
 using CommonServiceLocator;
-using Neutronium.SPA.Application.LifeCycleHook;
-using Neutronium.SPA.Application.Navigation;
-using Neutronium.SPA.Application.WindowServices;
-using Neutronium.SPA.ViewModel;
 using Neutronium.WPF.ViewModel;
+using Vm.Tools.Application.LifeCycleHook;
+using Vm.Tools.Application.Navigation;
+using Vm.Tools.Application.ViewModel;
+using Vm.Tools.Application.WindowServices;
 
 namespace Neutronium.SPA
 {

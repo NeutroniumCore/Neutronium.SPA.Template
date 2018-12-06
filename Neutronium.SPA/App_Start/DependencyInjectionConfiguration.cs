@@ -1,14 +1,14 @@
 ﻿using System;
 using CommonServiceLocator;
 using Neutronium.Core.WebBrowserEngine.Window;
-using Neutronium.SPA.Application.LifeCycleHook;
 using Neutronium.SPA.ServiceLocator;
 using Neutronium.SPA.ViewModel.Pages;
 using Neutronium.WPF.Internal;
 using Ninject;
 using Vm.Tools.Application;
+using Vm.Tools.Application.LifeCycleHook;
 
-namespace Neutronium.SPA 
+namespace Neutronium.SPA
 {
     public class DependencyInjectionConfiguration: IDependencyInjectionConfiguration
     {
