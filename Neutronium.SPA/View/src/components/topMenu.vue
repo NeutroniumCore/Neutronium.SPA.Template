@@ -47,8 +47,7 @@ export default {
   computed: {
     middleIcon() {
       return this.window.State.displayName == "Normal"
-        ? "fa-window-maximize"
-        : "fa-window-restore";
+        ? "mdi-window-maximize" : "mdi-window-restore"
     }
   },
 

@@ -211,6 +211,8 @@
     </None>
     <AppDesigner Include="Properties\" />
     <None Include="View\.browserslistrc" />
+    <None Include="View\.env.integrated" />
+    <None Include="View\.env.production" />
     <None Include="View\data\about\vm.cjson" />
     <None Include="View\data\main\vm.cjson" />
     <None Include="View\data\vm.cjson" />

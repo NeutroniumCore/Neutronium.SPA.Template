@@ -1,4 +1,5 @@
 import "material-design-icons/iconfont/material-icons.css";
+import "@mdi/font/css/materialdesignicons.css";
 import "font-awesome/css/font-awesome.css";
 
 import Vue_Router from "vue-router";
