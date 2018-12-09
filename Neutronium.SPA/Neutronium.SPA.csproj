@@ -159,6 +159,7 @@
     <Compile Include="Application\WindowServices\IMessageBox.cs" />
     <Compile Include="Application\WindowServices\ConfirmationMessage.cs" />
     <Compile Include="Application\LifeCycleHook\LifeCycleEventsRegistror.cs" />
+    <None Include="build.cmd" />
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
