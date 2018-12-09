@@ -5,25 +5,24 @@
 </template>
 
 <script>
-import mixin from 'neutronium-vue-simple-command-mixin'
+import mixin from "neutronium-vue-simple-command-mixin";
 
 const props = {
-    text:{
-        type: String,
-        required: true
-    },
-    color:{
-        type: String,
-        default: 'primary'
-    }
-}
+  text: {
+    type: String,
+    required: true
+  },
+  color: {
+    type: String,
+    default: "primary"
+  }
+};
 
 export default {
-    mixins: [mixin],
-    props
-}
+  mixins: [mixin],
+  props
+};
 </script>
 
-<<style>
-
+<style>
 </style>

@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
-using Neutronium.SPA.Application.LifeCycleHook;
-using Neutronium.SPA.Application.Navigation;
-using Neutronium.SPA.Application.WindowServices;
 using Vm.Tools.Application;
+using Vm.Tools.Application.LifeCycleHook;
+using Vm.Tools.Application.Navigation;
+using Vm.Tools.Application.WindowServices;
 
 namespace Neutronium.SPA
 {
@@ -28,7 +28,7 @@ namespace Neutronium.SPA
         public async void OnClosing(CancelEventArgs cancelEvent)
         {
             cancelEvent.Cancel = true;
-            var confirmationMessage = new ConfirmationMessage(Resource.ConfirmationNeeded, Resource.DoYouWantToCloseApplication);
+            var confirmationMessage = new ConfirmationMessage(Resource.ConfirmationNeeded, Resource.DoYouWantToCloseApplication, Resource.Ok, Resource.Cancel);
             var close = await _MessageBox.ShowMessage(confirmationMessage);
             if (close)
                 _Application.ForceClose();
