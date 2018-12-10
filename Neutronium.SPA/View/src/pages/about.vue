@@ -1,7 +1,7 @@
 <template>
     <main>
         <v-content>
-            <v-flex xs12 sm6 offset-sm3>
+            <v-flex xs12 sm3 offset-sm4>
             <v-card>
                 <v-img :src="require('../assets/logo.png')" height="200px" contain>
                 </v-img>

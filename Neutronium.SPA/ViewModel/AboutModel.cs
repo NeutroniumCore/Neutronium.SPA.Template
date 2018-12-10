@@ -1,6 +1,6 @@
 ﻿using Vm.Tools.Application.ViewModel;
 
-namespace Neutronium.SPA.ViewModel.Pages 
+namespace Neutronium.SPA.ViewModel 
 {
     public class AboutViewModel 
     {

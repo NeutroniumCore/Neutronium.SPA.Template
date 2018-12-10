@@ -27,12 +27,6 @@ namespace Neutronium.SPA
             return new VueSessionInjector();
         }
 
-        protected override void UpdateLineCommandArg(CfxOnBeforeCommandLineProcessingEventArgs beforeLineCommand)
-        {
-            beforeLineCommand.CommandLine.AppendSwitch("disable-gpu");
-            beforeLineCommand.CommandLine.AppendSwitch("disable-web-security");          
-        }
-
         protected override void OnStartUp(IHTMLEngineFactory factory)
         {
             Mode = GetApplicationMode(Args);
