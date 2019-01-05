@@ -4,7 +4,7 @@ namespace Neutronium.SPA.ViewModel.Pages
 {
     public class AboutViewModel 
     {
-        public ApplicationInformation Information { get; } = new ApplicationInformation();
+        public ApplicationInformation Information { get; } = new ApplicationInformation("Neutronium Demo", "David Desmaisons");
 
         public string[] Descriptions { get; } =
         {

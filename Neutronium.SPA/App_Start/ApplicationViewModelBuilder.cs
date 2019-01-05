@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using CommonServiceLocator;
+using Neutronium.MVVMComponents;
 using Neutronium.WPF.ViewModel;
 using Vm.Tools.Application.LifeCycleHook;
 using Vm.Tools.Application.Navigation;
@@ -10,7 +11,7 @@ namespace Neutronium.SPA
 {
     public class ApplicationViewModelBuilder
     {
-        public ApplicationViewModel ApplicationViewModel { get; }
+        public ApplicationViewModel<ApplicationInformation> ApplicationViewModel { get; }
         private readonly LifeCycleEventsRegistror _LifeCycleEventsRegistror;
 
         public ApplicationViewModelBuilder(Window wpfWindow)
@@ -20,13 +21,13 @@ namespace Neutronium.SPA
             var serviceLocatorBuilder = new DependencyInjectionConfiguration();
             var serviceLocatorLazy = serviceLocatorBuilder.GetServiceLocator();
 
-            var navigation = NavigationViewModel.Create(serviceLocatorLazy, routeSolver);
+            var navigation = new NavigationViewModel(serviceLocatorLazy, routeSolver);
 
             serviceLocatorBuilder.Register<IWindowViewModel>(window);
             serviceLocatorBuilder.Register<INavigator>(navigation);
             serviceLocatorBuilder.Register(navigation);
 
-            ApplicationViewModel = new ApplicationViewModel(window, navigation);
+            ApplicationViewModel = new ApplicationViewModel<ApplicationInformation>(window, navigation, new ApplicationInformation("Neutronium Demo", "David Desmaisons"));
             serviceLocatorBuilder.Register<IMessageBox>(ApplicationViewModel);
             serviceLocatorBuilder.Register<INotificationSender>(ApplicationViewModel);
 
@@ -36,8 +37,8 @@ namespace Neutronium.SPA
 
         private static LifeCycleEventsRegistror RegisterLifeCycleEvents(IServiceLocator serviceLocator)
         {
-            var registor = serviceLocator.GetInstance<LifeCycleEventsRegistror>();
-            return registor.Register();
+            var register = serviceLocator.GetInstance<LifeCycleEventsRegistror>();
+            return register.Register();
         }
     }
 }

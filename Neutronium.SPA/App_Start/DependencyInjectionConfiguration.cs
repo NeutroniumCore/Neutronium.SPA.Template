@@ -7,6 +7,7 @@ using Neutronium.WPF.Internal;
 using Ninject;
 using Vm.Tools.Application;
 using Vm.Tools.Application.LifeCycleHook;
+using Vm.Tools.Standard;
 
 namespace Neutronium.SPA
 {

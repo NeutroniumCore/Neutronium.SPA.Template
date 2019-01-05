@@ -25,7 +25,7 @@ namespace Neutronium.SPA
             Initialized -= MainWindow_Initialized;
         }
 
-        private ApplicationViewModel BuildApplicationViewModel()
+        private ApplicationViewModel<ApplicationInformation> BuildApplicationViewModel()
         {
             _ApplicationViewModelBuilder = new ApplicationViewModelBuilder(this);
             return _ApplicationViewModelBuilder.ApplicationViewModel;

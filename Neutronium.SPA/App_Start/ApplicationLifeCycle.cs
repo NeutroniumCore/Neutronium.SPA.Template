@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
-using Vm.Tools.Application;
 using Vm.Tools.Application.LifeCycleHook;
 using Vm.Tools.Application.Navigation;
 using Vm.Tools.Application.WindowServices;
+using Vm.Tools.Standard;
 
 namespace Neutronium.SPA
 {
