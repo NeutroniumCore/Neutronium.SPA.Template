@@ -16,7 +16,7 @@ namespace Neutronium.SPA
         {
             var convention = routeBuilder.GetTemplateConvention("{vm}");
             typeof(RoutingConfiguration).GetTypesFromSameAssembly()
-                .InNamespace("Neutronium.SPA.ViewModel.Pages")
+                .InNamespace("Neutronium.SPA.ViewModel")
                 .Register(convention);
         }
     }

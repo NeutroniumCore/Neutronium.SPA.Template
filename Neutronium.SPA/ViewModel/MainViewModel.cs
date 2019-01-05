@@ -1,4 +1,4 @@
-﻿namespace Neutronium.SPA.ViewModel.Pages 
+﻿namespace Neutronium.SPA.ViewModel 
 {
     public class MainViewModel : Vm.Tools.Standard.ViewModel
     {

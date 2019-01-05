@@ -43,6 +43,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -57,13 +58,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>TRACE;-dev</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Application.SetUp, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -169,8 +170,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\Pages\AboutModel.cs" />
-    <Compile Include="ViewModel\Pages\MainViewModel.cs" />
+    <Compile Include="ViewModel\AboutModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -263,6 +264,7 @@
     <Resource Include="View\dist\img\fontawesome-webfont.svg" />
     <Resource Include="View\dist\js\app.js" />
     <Resource Include="View\dist\js\chunk-vendors.js" />
+    <Resource Include="View\dist\img\materialdesignicons-webfont.svg" />
     <Content Include="View\vue.config.js" />
     <Content Include="View\jest.config.js" />
     <Content Include="View\postcss.config.js" />
@@ -270,7 +272,6 @@
     <Content Include="View\public\index.html" />
     <Content Include="View\src\entry.js" />
     <Content Include="View\src\install.js" />
-    <Content Include="View\src\integrated.js" />
     <Content Include="View\src\main.js" />
     <Content Include="View\src\message.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
