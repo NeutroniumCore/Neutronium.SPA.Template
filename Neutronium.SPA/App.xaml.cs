@@ -1,6 +1,8 @@
-﻿using System;
-using System.Linq;
-using Chromium.Event;
+﻿using System.Diagnostics;
+using System.Windows;
+using Chromium;
+using Neutronium.BuildingBlocks.SetUp;
+using Neutronium.BuildingBlocks.SetUp.NpmHelper;
 using Neutronium.Core.JavascriptFramework;
 using Neutronium.JavascriptFramework.Vue;
 using Neutronium.WebBrowserEngine.ChromiumFx;
@@ -13,34 +15,50 @@ namespace Neutronium.SPA
     /// </summary>
     public partial class App : ChromiumFxWebBrowserApp
     {
-        public ApplicationMode Mode { get; private set; }
-        public bool RunTimeOnly => (Mode != ApplicationMode.Dev);
-        public bool Debug => (Mode != ApplicationMode.Production);
-        public Uri Uri => (Mode == ApplicationMode.Dev) ?
-                                new Uri("http://localhost:8080/index.html") :
-                                new Uri("pack://application:,,,/View/dist/index.html");
+        public static SetUpViewModel SetUp => (Current as App)?.SetUpViewModel;
 
-        public static App MainApplication => Current as App;
+        private SetUpViewModel SetUpViewModel { get; }
+        private readonly ApplicationSetUpBuilder _ApplicationSetUpBuilder;
+
+        public App()
+        {
+            _ApplicationSetUpBuilder = new ApplicationSetUpBuilder("View");
+            SetUpViewModel = new SetUpViewModel(_ApplicationSetUpBuilder);
+        }
 
         protected override IJavascriptFrameworkManager GetJavascriptUIFrameworkManager()
         {
             return new VueSessionInjector();
         }
 
+        protected override void UpdateChromiumBrowserSettings(CfxBrowserSettings browserSettings)
+        {
+            var black = new CfxColor(255, 0, 0, 0);
+            browserSettings.BackgroundColor = black;
+        }
+
         protected override void OnStartUp(IHTMLEngineFactory factory)
         {
-            Mode = GetApplicationMode(Args);
-            factory.RegisterJavaScriptFrameworkAsDefault(new VueSessionInjectorV2 { RunTimeOnly = RunTimeOnly });
+#if DEBUG
+            _ApplicationSetUpBuilder.OnRunnerMessageReceived += OnRunnerMessageReceived;
+            SetUpViewModel.InitFromArgs(Args).Wait();
+            Trace.WriteLine($"Starting with set-up: {SetUpViewModel}");
+#else
+            SetUpViewModel.InitForProduction();
+#endif
+            factory.RegisterJavaScriptFrameworkAsDefault(new VueSessionInjectorV2 { RunTimeOnly = true });
             base.OnStartUp(factory);
         }
 
-        private static ApplicationMode GetApplicationMode(string[] args)
+        private void OnRunnerMessageReceived(object sender, RunnerMessageEventArgs e)
         {
-#if DEBUG
-            var normalizedArgs = args.Select(arg => arg.ToLower()).ToList();
-            return (normalizedArgs.Contains("-dev")) ? ApplicationMode.Dev : (normalizedArgs.Contains("-prod"))? ApplicationMode.Production: ApplicationMode.Test;
-#endif
-            return ApplicationMode.Production;
+            Trace.WriteLine($"Npm runner log: {e.Message}");
+        }
+
+        protected override void OnExit(ExitEventArgs e)
+        {
+            _ApplicationSetUpBuilder.Dispose();
+            base.OnExit(e);
         }
     }
 }

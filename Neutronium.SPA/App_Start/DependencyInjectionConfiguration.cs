@@ -1,13 +1,13 @@
 ﻿using System;
 using CommonServiceLocator;
+using Neutronium.BuildingBlocks.Application.LifeCycleHook;
+using Neutronium.BuildingBlocks.ApplicationTools;
+using Neutronium.BuildingBlocks.Wpf.Application;
 using Neutronium.Core.WebBrowserEngine.Window;
 using Neutronium.SPA.ServiceLocator;
 using Neutronium.SPA.ViewModel;
 using Neutronium.WPF.Internal;
 using Ninject;
-using Vm.Tools.Application;
-using Vm.Tools.Application.LifeCycleHook;
-using Vm.Tools.Standard;
 
 namespace Neutronium.SPA
 {

@@ -1,5 +1,5 @@
-﻿using Neutronium.Core.Navigation.Routing;
-using Vm.Tools.Application.Navigation;
+﻿using Neutronium.BuildingBlocks.Application.Navigation;
+using Neutronium.Core.Navigation.Routing;
 
 namespace Neutronium.SPA
 {

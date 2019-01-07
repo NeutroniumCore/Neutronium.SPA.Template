@@ -1,5 +1,6 @@
 ﻿using System;
-using Vm.Tools.Application.ViewModel;
+using Neutronium.BuildingBlocks.Application.ViewModels;
+using Neutronium.BuildingBlocks.SetUp;
 
 namespace Neutronium.SPA 
 {
@@ -8,10 +9,12 @@ namespace Neutronium.SPA
     /// </summary>
     public partial class MainWindow
     {
+        public SetUpViewModel SetUp => App.SetUp;
+
         private ApplicationViewModelBuilder _ApplicationViewModelBuilder;
 
-        public bool Debug => App.MainApplication.Debug;
-        public Uri Uri => App.MainApplication.Uri;
+        //public bool Debug => App.MainApplication.Debug;
+        //public Uri Uri => App.MainApplication.Uri;
 
         public MainWindow()
         {

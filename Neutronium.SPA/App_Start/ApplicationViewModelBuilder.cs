@@ -1,18 +1,18 @@
 ﻿using System.Windows;
 using CommonServiceLocator;
+using Neutronium.BuildingBlocks.Application.LifeCycleHook;
+using Neutronium.BuildingBlocks.Application.Navigation;
+using Neutronium.BuildingBlocks.Application.ViewModels;
+using Neutronium.BuildingBlocks.Application.WindowServices;
 using Neutronium.MVVMComponents;
 using Neutronium.WPF.ViewModel;
-using Vm.Tools.Application.LifeCycleHook;
-using Vm.Tools.Application.Navigation;
-using Vm.Tools.Application.ViewModel;
-using Vm.Tools.Application.WindowServices;
 
 namespace Neutronium.SPA
 {
     public class ApplicationViewModelBuilder
     {
         public ApplicationViewModel<ApplicationInformation> ApplicationViewModel { get; }
-        private readonly LifeCycleEventsRegistror _LifeCycleEventsRegistror;
+        private readonly LifeCycleEventsRegister _LifeCycleEventsRegister;
 
         public ApplicationViewModelBuilder(Window wpfWindow)
         {
@@ -32,12 +32,12 @@ namespace Neutronium.SPA
             serviceLocatorBuilder.Register<INotificationSender>(ApplicationViewModel);
 
             var serviceLocator = serviceLocatorLazy.Value;
-            _LifeCycleEventsRegistror = RegisterLifeCycleEvents(serviceLocator);
+            _LifeCycleEventsRegister = RegisterLifeCycleEvents(serviceLocator);
         }
 
-        private static LifeCycleEventsRegistror RegisterLifeCycleEvents(IServiceLocator serviceLocator)
+        private static LifeCycleEventsRegister RegisterLifeCycleEvents(IServiceLocator serviceLocator)
         {
-            var register = serviceLocator.GetInstance<LifeCycleEventsRegistror>();
+            var register = serviceLocator.GetInstance<LifeCycleEventsRegister>();
             return register.Register();
         }
     }

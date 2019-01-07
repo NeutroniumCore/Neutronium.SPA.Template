@@ -67,9 +67,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Application.SetUp, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vm.Tools.4.1.0\lib\Application.SetUp.dll</HintPath>
-    </Reference>
     <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net47\CommonServiceLocator.dll</HintPath>
     </Reference>
@@ -81,6 +78,18 @@
     </Reference>
     <Reference Include="MoreCollection, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MoreCollection.2.0.0\lib\net45\MoreCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="Neutronium.BuildingBlocks.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.Application.1.0.0\lib\net472\Neutronium.BuildingBlocks.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Neutronium.BuildingBlocks.ApplicationTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.ApplicationTools.1.0.0\lib\net472\Neutronium.BuildingBlocks.ApplicationTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Neutronium.BuildingBlocks.SetUp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.SetUp.1.0.0\lib\net472\Neutronium.BuildingBlocks.SetUp.dll</HintPath>
+    </Reference>
+    <Reference Include="Neutronium.BuildingBlocks.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.Wpf.1.0.0\lib\net472\Neutronium.BuildingBlocks.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Neutronium.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neutronium.Core.1.5.0\lib\net472\Neutronium.Core.dll</HintPath>
@@ -141,15 +150,6 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="Vm.Tools, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vm.Tools.4.1.0\lib\Vm.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="Vm.Tools.Application, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vm.Tools.4.1.0\lib\Vm.Tools.Application.dll</HintPath>
-    </Reference>
-    <Reference Include="Vm.Tools.Standard, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vm.Tools.4.1.0\lib\Vm.Tools.Standard.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />

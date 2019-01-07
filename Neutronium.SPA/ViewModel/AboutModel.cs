@@ -1,4 +1,4 @@
-﻿using Vm.Tools.Application.ViewModel;
+﻿using Neutronium.BuildingBlocks.Application.ViewModels;
 
 namespace Neutronium.SPA.ViewModel 
 {
