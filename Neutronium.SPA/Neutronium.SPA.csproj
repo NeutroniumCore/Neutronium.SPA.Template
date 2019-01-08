@@ -79,17 +79,17 @@
     <Reference Include="MoreCollection, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MoreCollection.2.0.0\lib\net45\MoreCollection.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.BuildingBlocks.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.BuildingBlocks.Application.1.0.0\lib\net472\Neutronium.BuildingBlocks.Application.dll</HintPath>
+    <Reference Include="Neutronium.BuildingBlocks.Application, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.Application.1.1.0\lib\net472\Neutronium.BuildingBlocks.Application.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.BuildingBlocks.ApplicationTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.BuildingBlocks.ApplicationTools.1.0.0\lib\net472\Neutronium.BuildingBlocks.ApplicationTools.dll</HintPath>
+    <Reference Include="Neutronium.BuildingBlocks.ApplicationTools, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.ApplicationTools.1.1.0\lib\net472\Neutronium.BuildingBlocks.ApplicationTools.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.BuildingBlocks.SetUp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.BuildingBlocks.SetUp.1.0.0\lib\net472\Neutronium.BuildingBlocks.SetUp.dll</HintPath>
+    <Reference Include="Neutronium.BuildingBlocks.SetUp, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.SetUp.1.1.0\lib\net472\Neutronium.BuildingBlocks.SetUp.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.BuildingBlocks.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.BuildingBlocks.Wpf.1.0.0\lib\net472\Neutronium.BuildingBlocks.Wpf.dll</HintPath>
+    <Reference Include="Neutronium.BuildingBlocks.Wpf, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.Wpf.1.1.0\lib\net472\Neutronium.BuildingBlocks.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Neutronium.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neutronium.Core.1.5.0\lib\net472\Neutronium.Core.dll</HintPath>

@@ -2,14 +2,12 @@
 using System.Windows;
 using Chromium;
 using Neutronium.BuildingBlocks.SetUp;
-using Neutronium.BuildingBlocks.SetUp.NpmHelper;
 using Neutronium.Core.JavascriptFramework;
 using Neutronium.JavascriptFramework.Vue;
 using Neutronium.WebBrowserEngine.ChromiumFx;
 using Neutronium.WPF;
 
-namespace Neutronium.SPA
-{
+namespace Neutronium.SPA {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
@@ -40,9 +38,7 @@ namespace Neutronium.SPA
         protected override void OnStartUp(IHTMLEngineFactory factory)
         {
 #if DEBUG
-            _ApplicationSetUpBuilder.OnRunnerMessageReceived += OnRunnerMessageReceived;
-            SetUpViewModel.InitFromArgs(Args).Wait();
-            Trace.WriteLine($"Starting with set-up: {SetUpViewModel}");
+            SetUpForDeveloppment();
 #else
             SetUpViewModel.InitForProduction();
 #endif
@@ -50,9 +46,22 @@ namespace Neutronium.SPA
             base.OnStartUp(factory);
         }
 
-        private void OnRunnerMessageReceived(object sender, RunnerMessageEventArgs e)
+        private void SetUpForDeveloppment()
+        {
+            _ApplicationSetUpBuilder.OnRunnerMessageReceived += OnRunnerMessageReceived;
+            _ApplicationSetUpBuilder.OnArgumentParsingError += OnArgumentParsingError;
+            SetUpViewModel.InitFromArgs(Args).Wait();
+            Trace.WriteLine($"Starting with set-up: {SetUpViewModel}");
+        }
+
+        private void OnRunnerMessageReceived(object sender,MessageEventArgs e)
         {
             Trace.WriteLine($"Npm runner log: {e.Message}");
+        }
+
+        private void OnArgumentParsingError(object sender, MessageEventArgs e)
+        {
+            Trace.WriteLine($"Error parsing arguments, unexpected item: {e.Message}");
         }
 
         protected override void OnExit(ExitEventArgs e)
