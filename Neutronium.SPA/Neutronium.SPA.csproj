@@ -160,7 +160,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ApplicationMode.cs" />
     <Compile Include="App_Start\ApplicationLifeCycle.cs" />
     <Compile Include="App_Start\ApplicationViewModelBuilder.cs" />
     <Compile Include="App_Start\ServiceLocator\NinjectServiceLocator.cs" />

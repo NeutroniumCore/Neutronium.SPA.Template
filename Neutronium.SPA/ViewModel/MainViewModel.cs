@@ -1,6 +1,6 @@
 ﻿namespace Neutronium.SPA.ViewModel 
 {
-    public class MainViewModel : BuildingBlocks.ViewModel
+    public class MainViewModel : Neutronium.BuildingBlocks.ViewModel
     {
         public MainViewModel()
         {
