@@ -21,13 +21,6 @@ const props = {
 };
 
 export default {
-  components: {},
-  methods: {
-    enter() {
-      const command = this.viewModel.AddItem;
-      if (command) command.Execute();
-    }
-  },
   props
 };
 </script>
