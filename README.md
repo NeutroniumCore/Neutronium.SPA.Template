@@ -52,6 +52,7 @@ See [Neutronium.SPA.Demo](https://github.com/NeutroniumCore/Neutronium.SPA.Demo)
 
         No debug, using local files.
 
+Note: when running in live mode, it is not needed to run manually `npm run live` this will be called automatically by the application.
 
 ### Injected context command
 
