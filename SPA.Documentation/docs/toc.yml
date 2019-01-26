@@ -1,0 +1,30 @@
+### YamlMime:TableOfContent
+- uid: Neutronium.SPA
+  name: Neutronium.SPA
+  items:
+  - uid: Neutronium.SPA.App
+    name: App
+  - uid: Neutronium.SPA.ApplicationLifeCycle
+    name: ApplicationLifeCycle
+  - uid: Neutronium.SPA.ApplicationViewModelBuilder
+    name: ApplicationViewModelBuilder
+  - uid: Neutronium.SPA.DependencyInjectionConfiguration
+    name: DependencyInjectionConfiguration
+  - uid: Neutronium.SPA.IDependencyInjectionConfiguration
+    name: IDependencyInjectionConfiguration
+  - uid: Neutronium.SPA.MainWindow
+    name: MainWindow
+  - uid: Neutronium.SPA.RoutingConfiguration
+    name: RoutingConfiguration
+- uid: Neutronium.SPA.ServiceLocator
+  name: Neutronium.SPA.ServiceLocator
+  items:
+  - uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+    name: NinjectServiceLocator
+- uid: Neutronium.SPA.ViewModel
+  name: Neutronium.SPA.ViewModel
+  items:
+  - uid: Neutronium.SPA.ViewModel.AboutViewModel
+    name: AboutViewModel
+  - uid: Neutronium.SPA.ViewModel.MainViewModel
+    name: MainViewModel

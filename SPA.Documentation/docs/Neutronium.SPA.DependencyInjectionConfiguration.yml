@@ -1,0 +1,723 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.DependencyInjectionConfiguration
+  commentId: T:Neutronium.SPA.DependencyInjectionConfiguration
+  id: DependencyInjectionConfiguration
+  parent: Neutronium.SPA
+  children:
+  - Neutronium.SPA.DependencyInjectionConfiguration.#ctor
+  - Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator
+  - Neutronium.SPA.DependencyInjectionConfiguration.Register``1(``0)
+  - Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency(Ninject.IKernel)
+  langs:
+  - csharp
+  - vb
+  name: DependencyInjectionConfiguration
+  nameWithType: DependencyInjectionConfiguration
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration
+  type: Class
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: DependencyInjectionConfiguration
+    path: ../Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+    startLine: 13
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: 'public class DependencyInjectionConfiguration : IDependencyInjectionConfiguration'
+    content.vb: >-
+      Public Class DependencyInjectionConfiguration
+          Implements IDependencyInjectionConfiguration
+  inheritance:
+  - System.Object
+  implements:
+  - Neutronium.SPA.IDependencyInjectionConfiguration
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.#ctor
+  commentId: M:Neutronium.SPA.DependencyInjectionConfiguration.#ctor
+  id: '#ctor'
+  parent: Neutronium.SPA.DependencyInjectionConfiguration
+  langs:
+  - csharp
+  - vb
+  name: DependencyInjectionConfiguration()
+  nameWithType: DependencyInjectionConfiguration.DependencyInjectionConfiguration()
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.DependencyInjectionConfiguration()
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: .ctor
+    path: ../Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+    startLine: 18
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public DependencyInjectionConfiguration()
+    content.vb: Public Sub New
+  overload: Neutronium.SPA.DependencyInjectionConfiguration.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator
+  commentId: M:Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator
+  id: GetServiceLocator
+  parent: Neutronium.SPA.DependencyInjectionConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetServiceLocator()
+  nameWithType: DependencyInjectionConfiguration.GetServiceLocator()
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: GetServiceLocator
+    path: ../Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+    startLine: 26
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public Lazy<IServiceLocator> GetServiceLocator()
+    return:
+      type: System.Lazy{CommonServiceLocator.IServiceLocator}
+    content.vb: Public Function GetServiceLocator As Lazy(Of IServiceLocator)
+  overload: Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator*
+  implements:
+  - Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.Register``1(``0)
+  commentId: M:Neutronium.SPA.DependencyInjectionConfiguration.Register``1(``0)
+  id: Register``1(``0)
+  parent: Neutronium.SPA.DependencyInjectionConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(T)
+  nameWithType: DependencyInjectionConfiguration.Register<T>(T)
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.Register<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: Register
+    path: ../Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+    startLine: 28
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public void Register<T>(T implementation)
+    parameters:
+    - id: implementation
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Public Sub Register(Of T)(implementation As T)
+  overload: Neutronium.SPA.DependencyInjectionConfiguration.Register*
+  implements:
+  - Neutronium.SPA.IDependencyInjectionConfiguration.Register``1({T})
+  nameWithType.vb: DependencyInjectionConfiguration.Register(Of T)(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Neutronium.SPA.DependencyInjectionConfiguration.Register(Of T)(T)
+  name.vb: Register(Of T)(T)
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency(Ninject.IKernel)
+  commentId: M:Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency(Ninject.IKernel)
+  id: RegisterDependency(Ninject.IKernel)
+  parent: Neutronium.SPA.DependencyInjectionConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RegisterDependency(IKernel)
+  nameWithType: DependencyInjectionConfiguration.RegisterDependency(IKernel)
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency(Ninject.IKernel)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: RegisterDependency
+    path: ../Neutronium.SPA/App_Start/DependencyInjectionConfiguration.cs
+    startLine: 30
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public static void RegisterDependency(IKernel kernel)
+    parameters:
+    - id: kernel
+      type: Ninject.IKernel
+    content.vb: Public Shared Sub RegisterDependency(kernel As IKernel)
+  overload: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Neutronium.SPA
+  commentId: N:Neutronium.SPA
+  name: Neutronium.SPA
+  nameWithType: Neutronium.SPA
+  fullName: Neutronium.SPA
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration
+  commentId: T:Neutronium.SPA.IDependencyInjectionConfiguration
+  parent: Neutronium.SPA
+  name: IDependencyInjectionConfiguration
+  nameWithType: IDependencyInjectionConfiguration
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.#ctor*
+  commentId: Overload:Neutronium.SPA.DependencyInjectionConfiguration.#ctor
+  name: DependencyInjectionConfiguration
+  nameWithType: DependencyInjectionConfiguration.DependencyInjectionConfiguration
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.DependencyInjectionConfiguration
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator*
+  commentId: Overload:Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator
+  name: GetServiceLocator
+  nameWithType: DependencyInjectionConfiguration.GetServiceLocator
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  commentId: M:Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  parent: Neutronium.SPA.IDependencyInjectionConfiguration
+  name: GetServiceLocator()
+  nameWithType: IDependencyInjectionConfiguration.GetServiceLocator()
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator()
+  spec.csharp:
+  - uid: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+    name: GetServiceLocator
+    nameWithType: IDependencyInjectionConfiguration.GetServiceLocator
+    fullName: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+    name: GetServiceLocator
+    nameWithType: IDependencyInjectionConfiguration.GetServiceLocator
+    fullName: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Lazy{CommonServiceLocator.IServiceLocator}
+  commentId: T:System.Lazy{CommonServiceLocator.IServiceLocator}
+  parent: System
+  definition: System.Lazy`1
+  name: Lazy<IServiceLocator>
+  nameWithType: Lazy<IServiceLocator>
+  fullName: System.Lazy<CommonServiceLocator.IServiceLocator>
+  nameWithType.vb: Lazy(Of IServiceLocator)
+  fullName.vb: System.Lazy(Of CommonServiceLocator.IServiceLocator)
+  name.vb: Lazy(Of IServiceLocator)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CommonServiceLocator.IServiceLocator
+    name: IServiceLocator
+    nameWithType: IServiceLocator
+    fullName: CommonServiceLocator.IServiceLocator
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CommonServiceLocator.IServiceLocator
+    name: IServiceLocator
+    nameWithType: IServiceLocator
+    fullName: CommonServiceLocator.IServiceLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Lazy`1
+  commentId: T:System.Lazy`1
+  isExternal: true
+  name: Lazy<T>
+  nameWithType: Lazy<T>
+  fullName: System.Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+  fullName.vb: System.Lazy(Of T)
+  name.vb: Lazy(Of T)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.Register*
+  commentId: Overload:Neutronium.SPA.DependencyInjectionConfiguration.Register
+  name: Register
+  nameWithType: DependencyInjectionConfiguration.Register
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.Register
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1({T})
+  commentId: M:Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+  parent: Neutronium.SPA.IDependencyInjectionConfiguration
+  definition: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+  name: Register<T>(T)
+  nameWithType: IDependencyInjectionConfiguration.Register<T>(T)
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register<T>(T)
+  nameWithType.vb: IDependencyInjectionConfiguration.Register(Of T)(T)
+  fullName.vb: Neutronium.SPA.IDependencyInjectionConfiguration.Register(Of T)(T)
+  name.vb: Register(Of T)(T)
+  spec.csharp:
+  - uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+    name: Register<T>
+    nameWithType: IDependencyInjectionConfiguration.Register<T>
+    fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+    name: Register(Of T)
+    nameWithType: IDependencyInjectionConfiguration.Register(Of T)
+    fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+  commentId: M:Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+  name: Register<T>(T)
+  nameWithType: IDependencyInjectionConfiguration.Register<T>(T)
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register<T>(T)
+  nameWithType.vb: IDependencyInjectionConfiguration.Register(Of T)(T)
+  fullName.vb: Neutronium.SPA.IDependencyInjectionConfiguration.Register(Of T)(T)
+  name.vb: Register(Of T)(T)
+  spec.csharp:
+  - uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+    name: Register<T>
+    nameWithType: IDependencyInjectionConfiguration.Register<T>
+    fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+    name: Register(Of T)
+    nameWithType: IDependencyInjectionConfiguration.Register(Of T)
+    fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency*
+  commentId: Overload:Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency
+  name: RegisterDependency
+  nameWithType: DependencyInjectionConfiguration.RegisterDependency
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency
+- uid: Ninject.IKernel
+  commentId: T:Ninject.IKernel
+  parent: Ninject
+  isExternal: true
+  name: IKernel
+  nameWithType: IKernel
+  fullName: Ninject.IKernel
+- uid: Ninject
+  commentId: N:Ninject
+  isExternal: true
+  name: Ninject
+  nameWithType: Ninject
+  fullName: Ninject

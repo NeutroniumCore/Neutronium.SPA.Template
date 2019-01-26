@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration
+  commentId: T:Neutronium.SPA.IDependencyInjectionConfiguration
+  id: IDependencyInjectionConfiguration
+  parent: Neutronium.SPA
+  children:
+  - Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  - Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: IDependencyInjectionConfiguration
+  nameWithType: IDependencyInjectionConfiguration
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration
+  type: Interface
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: IDependencyInjectionConfiguration
+    path: ../Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs
+    startLine: 5
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public interface IDependencyInjectionConfiguration
+    content.vb: Public Interface IDependencyInjectionConfiguration
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  commentId: M:Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  id: GetServiceLocator
+  parent: Neutronium.SPA.IDependencyInjectionConfiguration
+  langs:
+  - csharp
+  - vb
+  name: GetServiceLocator()
+  nameWithType: IDependencyInjectionConfiguration.GetServiceLocator()
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: GetServiceLocator
+    path: ../Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs
+    startLine: 7
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: Lazy<IServiceLocator> GetServiceLocator()
+    return:
+      type: System.Lazy{CommonServiceLocator.IServiceLocator}
+    content.vb: Function GetServiceLocator As Lazy(Of IServiceLocator)
+  overload: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator*
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+  commentId: M:Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
+  id: Register``1(``0)
+  parent: Neutronium.SPA.IDependencyInjectionConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(T)
+  nameWithType: IDependencyInjectionConfiguration.Register<T>(T)
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: Register
+    path: ../Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs
+    startLine: 9
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: void Register<T>(T implementation)
+    parameters:
+    - id: implementation
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Sub Register(Of T)(implementation As T)
+  overload: Neutronium.SPA.IDependencyInjectionConfiguration.Register*
+  nameWithType.vb: IDependencyInjectionConfiguration.Register(Of T)(T)
+  fullName.vb: Neutronium.SPA.IDependencyInjectionConfiguration.Register(Of T)(T)
+  name.vb: Register(Of T)(T)
+references:
+- uid: Neutronium.SPA
+  commentId: N:Neutronium.SPA
+  name: Neutronium.SPA
+  nameWithType: Neutronium.SPA
+  fullName: Neutronium.SPA
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator*
+  commentId: Overload:Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+  name: GetServiceLocator
+  nameWithType: IDependencyInjectionConfiguration.GetServiceLocator
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
+- uid: System.Lazy{CommonServiceLocator.IServiceLocator}
+  commentId: T:System.Lazy{CommonServiceLocator.IServiceLocator}
+  parent: System
+  definition: System.Lazy`1
+  name: Lazy<IServiceLocator>
+  nameWithType: Lazy<IServiceLocator>
+  fullName: System.Lazy<CommonServiceLocator.IServiceLocator>
+  nameWithType.vb: Lazy(Of IServiceLocator)
+  fullName.vb: System.Lazy(Of CommonServiceLocator.IServiceLocator)
+  name.vb: Lazy(Of IServiceLocator)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: CommonServiceLocator.IServiceLocator
+    name: IServiceLocator
+    nameWithType: IServiceLocator
+    fullName: CommonServiceLocator.IServiceLocator
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: CommonServiceLocator.IServiceLocator
+    name: IServiceLocator
+    nameWithType: IServiceLocator
+    fullName: CommonServiceLocator.IServiceLocator
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Lazy`1
+  commentId: T:System.Lazy`1
+  isExternal: true
+  name: Lazy<T>
+  nameWithType: Lazy<T>
+  fullName: System.Lazy<T>
+  nameWithType.vb: Lazy(Of T)
+  fullName.vb: System.Lazy(Of T)
+  name.vb: Lazy(Of T)
+  spec.csharp:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Lazy`1
+    name: Lazy
+    nameWithType: Lazy
+    fullName: System.Lazy
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register*
+  commentId: Overload:Neutronium.SPA.IDependencyInjectionConfiguration.Register
+  name: Register
+  nameWithType: IDependencyInjectionConfiguration.Register
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

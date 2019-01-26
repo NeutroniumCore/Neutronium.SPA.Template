@@ -1,0 +1,524 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.ApplicationViewModelBuilder
+  commentId: T:Neutronium.SPA.ApplicationViewModelBuilder
+  id: ApplicationViewModelBuilder
+  parent: Neutronium.SPA
+  children:
+  - Neutronium.SPA.ApplicationViewModelBuilder.#ctor(System.Windows.Window)
+  - Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel
+  langs:
+  - csharp
+  - vb
+  name: ApplicationViewModelBuilder
+  nameWithType: ApplicationViewModelBuilder
+  fullName: Neutronium.SPA.ApplicationViewModelBuilder
+  type: Class
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ApplicationViewModelBuilder.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: ApplicationViewModelBuilder
+    path: ../Neutronium.SPA/App_Start/ApplicationViewModelBuilder.cs
+    startLine: 11
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public class ApplicationViewModelBuilder
+    content.vb: Public Class ApplicationViewModelBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel
+  commentId: P:Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel
+  id: ApplicationViewModel
+  parent: Neutronium.SPA.ApplicationViewModelBuilder
+  langs:
+  - csharp
+  - vb
+  name: ApplicationViewModel
+  nameWithType: ApplicationViewModelBuilder.ApplicationViewModel
+  fullName: Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel
+  type: Property
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ApplicationViewModelBuilder.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: ApplicationViewModel
+    path: ../Neutronium.SPA/App_Start/ApplicationViewModelBuilder.cs
+    startLine: 13
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public ApplicationViewModel<ApplicationInformation> ApplicationViewModel { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel{Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation}
+    content.vb: Public ReadOnly Property ApplicationViewModel As ApplicationViewModel(Of ApplicationInformation)
+  overload: Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.SPA.ApplicationViewModelBuilder.#ctor(System.Windows.Window)
+  commentId: M:Neutronium.SPA.ApplicationViewModelBuilder.#ctor(System.Windows.Window)
+  id: '#ctor(System.Windows.Window)'
+  parent: Neutronium.SPA.ApplicationViewModelBuilder
+  langs:
+  - csharp
+  - vb
+  name: ApplicationViewModelBuilder(Window)
+  nameWithType: ApplicationViewModelBuilder.ApplicationViewModelBuilder(Window)
+  fullName: Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModelBuilder(System.Windows.Window)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ApplicationViewModelBuilder.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: .ctor
+    path: ../Neutronium.SPA/App_Start/ApplicationViewModelBuilder.cs
+    startLine: 16
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public ApplicationViewModelBuilder(Window wpfWindow)
+    parameters:
+    - id: wpfWindow
+      type: System.Windows.Window
+    content.vb: Public Sub New(wpfWindow As Window)
+  overload: Neutronium.SPA.ApplicationViewModelBuilder.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.SPA
+  commentId: N:Neutronium.SPA
+  name: Neutronium.SPA
+  nameWithType: Neutronium.SPA
+  fullName: Neutronium.SPA
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel*
+  commentId: Overload:Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel
+  name: ApplicationViewModel
+  nameWithType: ApplicationViewModelBuilder.ApplicationViewModel
+  fullName: Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModel
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel{Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation}
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel{Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation}
+  parent: Neutronium.BuildingBlocks.Application.ViewModels
+  definition: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  name: ApplicationViewModel<ApplicationInformation>
+  nameWithType: ApplicationViewModel<ApplicationInformation>
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation>
+  nameWithType.vb: ApplicationViewModel(Of ApplicationInformation)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation)
+  name.vb: ApplicationViewModel(Of ApplicationInformation)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+    name: ApplicationViewModel
+    nameWithType: ApplicationViewModel
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+    name: ApplicationInformation
+    nameWithType: ApplicationInformation
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+    name: ApplicationViewModel
+    nameWithType: ApplicationViewModel
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+    name: ApplicationInformation
+    nameWithType: ApplicationInformation
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+  isExternal: true
+  name: ApplicationViewModel<T>
+  nameWithType: ApplicationViewModel<T>
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel<T>
+  nameWithType.vb: ApplicationViewModel(Of T)
+  fullName.vb: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel(Of T)
+  name.vb: ApplicationViewModel(Of T)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+    name: ApplicationViewModel
+    nameWithType: ApplicationViewModel
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel`1
+    name: ApplicationViewModel
+    nameWithType: ApplicationViewModel
+    fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationViewModel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.Application.ViewModels
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels
+  isExternal: true
+  name: Neutronium.BuildingBlocks.Application.ViewModels
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels
+- uid: Neutronium.SPA.ApplicationViewModelBuilder.#ctor*
+  commentId: Overload:Neutronium.SPA.ApplicationViewModelBuilder.#ctor
+  name: ApplicationViewModelBuilder
+  nameWithType: ApplicationViewModelBuilder.ApplicationViewModelBuilder
+  fullName: Neutronium.SPA.ApplicationViewModelBuilder.ApplicationViewModelBuilder
+- uid: System.Windows.Window
+  commentId: T:System.Windows.Window
+  parent: System.Windows
+  isExternal: true
+  name: Window
+  nameWithType: Window
+  fullName: System.Windows.Window
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows

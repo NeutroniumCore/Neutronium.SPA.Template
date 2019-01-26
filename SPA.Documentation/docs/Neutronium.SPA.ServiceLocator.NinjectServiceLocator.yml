@@ -1,0 +1,1191 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  commentId: T:Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  id: NinjectServiceLocator
+  parent: Neutronium.SPA.ServiceLocator
+  children:
+  - Neutronium.SPA.ServiceLocator.NinjectServiceLocator.#ctor(Ninject.IKernel)
+  - Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances(System.Type)
+  - Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance(System.Type,System.String)
+  - Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel
+  langs:
+  - csharp
+  - vb
+  name: NinjectServiceLocator
+  nameWithType: NinjectServiceLocator
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  type: Class
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: NinjectServiceLocator
+    path: ../Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+    startLine: 7
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ServiceLocator
+  syntax:
+    content: 'public class NinjectServiceLocator : ServiceLocatorImplBase, IServiceLocator, IServiceProvider'
+    content.vb: >-
+      Public Class NinjectServiceLocator
+          Inherits ServiceLocatorImplBase
+          Implements IServiceLocator, IServiceProvider
+  inheritance:
+  - System.Object
+  - CommonServiceLocator.ServiceLocatorImplBase
+  implements:
+  - CommonServiceLocator.IServiceLocator
+  - System.IServiceProvider
+  inheritedMembers:
+  - CommonServiceLocator.ServiceLocatorImplBase.GetService(System.Type)
+  - CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type)
+  - CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type,System.String)
+  - CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(System.Type)
+  - CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1
+  - CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1(System.String)
+  - CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances``1
+  - CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage(System.Exception,System.Type,System.String)
+  - CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage(System.Exception,System.Type)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel
+  commentId: P:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel
+  id: Kernel
+  parent: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: Kernel
+  nameWithType: NinjectServiceLocator.Kernel
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel
+  type: Property
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: Kernel
+    path: ../Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+    startLine: 9
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ServiceLocator
+  syntax:
+    content: public IKernel Kernel { get; }
+    parameters: []
+    return:
+      type: Ninject.IKernel
+    content.vb: Public ReadOnly Property Kernel As IKernel
+  overload: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.#ctor(Ninject.IKernel)
+  commentId: M:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.#ctor(Ninject.IKernel)
+  id: '#ctor(Ninject.IKernel)'
+  parent: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: NinjectServiceLocator(IKernel)
+  nameWithType: NinjectServiceLocator.NinjectServiceLocator(IKernel)
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.NinjectServiceLocator(Ninject.IKernel)
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: .ctor
+    path: ../Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+    startLine: 11
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ServiceLocator
+  syntax:
+    content: public NinjectServiceLocator(IKernel kernel)
+    parameters:
+    - id: kernel
+      type: Ninject.IKernel
+    content.vb: Public Sub New(kernel As IKernel)
+  overload: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance(System.Type,System.String)
+  commentId: M:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance(System.Type,System.String)
+  id: DoGetInstance(System.Type,System.String)
+  parent: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: DoGetInstance(Type, String)
+  nameWithType: NinjectServiceLocator.DoGetInstance(Type, String)
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance(System.Type, System.String)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: DoGetInstance
+    path: ../Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+    startLine: 16
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ServiceLocator
+  syntax:
+    content: protected override object DoGetInstance(Type serviceType, string key)
+    parameters:
+    - id: serviceType
+      type: System.Type
+    - id: key
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Protected Overrides Function DoGetInstance(serviceType As Type, key As String) As Object
+  overridden: CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance(System.Type,System.String)
+  overload: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances(System.Type)
+  commentId: M:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances(System.Type)
+  id: DoGetAllInstances(System.Type)
+  parent: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: DoGetAllInstances(Type)
+  nameWithType: NinjectServiceLocator.DoGetAllInstances(Type)
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: DoGetAllInstances
+    path: ../Neutronium.SPA/App_Start/ServiceLocator/NinjectServiceLocator.cs
+    startLine: 26
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ServiceLocator
+  syntax:
+    content: protected override IEnumerable<object> DoGetAllInstances(Type serviceType)
+    parameters:
+    - id: serviceType
+      type: System.Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    content.vb: Protected Overrides Function DoGetAllInstances(serviceType As Type) As IEnumerable(Of Object)
+  overridden: CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances(System.Type)
+  overload: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Neutronium.SPA.ServiceLocator
+  commentId: N:Neutronium.SPA.ServiceLocator
+  name: Neutronium.SPA.ServiceLocator
+  nameWithType: Neutronium.SPA.ServiceLocator
+  fullName: Neutronium.SPA.ServiceLocator
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CommonServiceLocator.ServiceLocatorImplBase
+  commentId: T:CommonServiceLocator.ServiceLocatorImplBase
+  parent: CommonServiceLocator
+  isExternal: true
+  name: ServiceLocatorImplBase
+  nameWithType: ServiceLocatorImplBase
+  fullName: CommonServiceLocator.ServiceLocatorImplBase
+- uid: CommonServiceLocator.IServiceLocator
+  commentId: T:CommonServiceLocator.IServiceLocator
+  parent: CommonServiceLocator
+  isExternal: true
+  name: IServiceLocator
+  nameWithType: IServiceLocator
+  fullName: CommonServiceLocator.IServiceLocator
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: CommonServiceLocator.ServiceLocatorImplBase.GetService(System.Type)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.GetService(System.Type)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: GetService(Type)
+  nameWithType: ServiceLocatorImplBase.GetService(Type)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.GetService(System.Type)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetService(System.Type)
+    name: GetService
+    nameWithType: ServiceLocatorImplBase.GetService
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetService(System.Type)
+    name: GetService
+    nameWithType: ServiceLocatorImplBase.GetService
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetService
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: GetInstance(Type)
+  nameWithType: ServiceLocatorImplBase.GetInstance(Type)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type)
+    name: GetInstance
+    nameWithType: ServiceLocatorImplBase.GetInstance
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type)
+    name: GetInstance
+    nameWithType: ServiceLocatorImplBase.GetInstance
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type,System.String)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type,System.String)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: GetInstance(Type, String)
+  nameWithType: ServiceLocatorImplBase.GetInstance(Type, String)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type, System.String)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type,System.String)
+    name: GetInstance
+    nameWithType: ServiceLocatorImplBase.GetInstance
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(System.Type,System.String)
+    name: GetInstance
+    nameWithType: ServiceLocatorImplBase.GetInstance
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(System.Type)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(System.Type)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: GetAllInstances(Type)
+  nameWithType: ServiceLocatorImplBase.GetAllInstances(Type)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(System.Type)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(System.Type)
+    name: GetAllInstances
+    nameWithType: ServiceLocatorImplBase.GetAllInstances
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(System.Type)
+    name: GetAllInstances
+    nameWithType: ServiceLocatorImplBase.GetAllInstances
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: GetInstance<TService>()
+  nameWithType: ServiceLocatorImplBase.GetInstance<TService>()
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance<TService>()
+  nameWithType.vb: ServiceLocatorImplBase.GetInstance(Of TService)()
+  fullName.vb: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(Of TService)()
+  name.vb: GetInstance(Of TService)()
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1
+    name: GetInstance<TService>
+    nameWithType: ServiceLocatorImplBase.GetInstance<TService>
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance<TService>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1
+    name: GetInstance(Of TService)
+    nameWithType: ServiceLocatorImplBase.GetInstance(Of TService)
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(Of TService)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1(System.String)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1(System.String)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: GetInstance<TService>(String)
+  nameWithType: ServiceLocatorImplBase.GetInstance<TService>(String)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance<TService>(System.String)
+  nameWithType.vb: ServiceLocatorImplBase.GetInstance(Of TService)(String)
+  fullName.vb: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(Of TService)(System.String)
+  name.vb: GetInstance(Of TService)(String)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1(System.String)
+    name: GetInstance<TService>
+    nameWithType: ServiceLocatorImplBase.GetInstance<TService>
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance<TService>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetInstance``1(System.String)
+    name: GetInstance(Of TService)
+    nameWithType: ServiceLocatorImplBase.GetInstance(Of TService)
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetInstance(Of TService)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances``1
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances``1
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: GetAllInstances<TService>()
+  nameWithType: ServiceLocatorImplBase.GetAllInstances<TService>()
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances<TService>()
+  nameWithType.vb: ServiceLocatorImplBase.GetAllInstances(Of TService)()
+  fullName.vb: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(Of TService)()
+  name.vb: GetAllInstances(Of TService)()
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances``1
+    name: GetAllInstances<TService>
+    nameWithType: ServiceLocatorImplBase.GetAllInstances<TService>
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances<TService>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances``1
+    name: GetAllInstances(Of TService)
+    nameWithType: ServiceLocatorImplBase.GetAllInstances(Of TService)
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.GetAllInstances(Of TService)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage(System.Exception,System.Type,System.String)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage(System.Exception,System.Type,System.String)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: FormatActivationExceptionMessage(Exception, Type, String)
+  nameWithType: ServiceLocatorImplBase.FormatActivationExceptionMessage(Exception, Type, String)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage(System.Exception, System.Type, System.String)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage(System.Exception,System.Type,System.String)
+    name: FormatActivationExceptionMessage
+    nameWithType: ServiceLocatorImplBase.FormatActivationExceptionMessage
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage(System.Exception,System.Type,System.String)
+    name: FormatActivationExceptionMessage
+    nameWithType: ServiceLocatorImplBase.FormatActivationExceptionMessage
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.FormatActivationExceptionMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage(System.Exception,System.Type)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage(System.Exception,System.Type)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: FormatActivateAllExceptionMessage(Exception, Type)
+  nameWithType: ServiceLocatorImplBase.FormatActivateAllExceptionMessage(Exception, Type)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage(System.Exception, System.Type)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage(System.Exception,System.Type)
+    name: FormatActivateAllExceptionMessage
+    nameWithType: ServiceLocatorImplBase.FormatActivateAllExceptionMessage
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage(System.Exception,System.Type)
+    name: FormatActivateAllExceptionMessage
+    nameWithType: ServiceLocatorImplBase.FormatActivateAllExceptionMessage
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.FormatActivateAllExceptionMessage
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CommonServiceLocator
+  commentId: N:CommonServiceLocator
+  isExternal: true
+  name: CommonServiceLocator
+  nameWithType: CommonServiceLocator
+  fullName: CommonServiceLocator
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel*
+  commentId: Overload:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel
+  name: Kernel
+  nameWithType: NinjectServiceLocator.Kernel
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.Kernel
+- uid: Ninject.IKernel
+  commentId: T:Ninject.IKernel
+  parent: Ninject
+  isExternal: true
+  name: IKernel
+  nameWithType: IKernel
+  fullName: Ninject.IKernel
+- uid: Ninject
+  commentId: N:Ninject
+  isExternal: true
+  name: Ninject
+  nameWithType: Ninject
+  fullName: Ninject
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.#ctor*
+  commentId: Overload:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.#ctor
+  name: NinjectServiceLocator
+  nameWithType: NinjectServiceLocator.NinjectServiceLocator
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.NinjectServiceLocator
+- uid: CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance(System.Type,System.String)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance(System.Type,System.String)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: DoGetInstance(Type, String)
+  nameWithType: ServiceLocatorImplBase.DoGetInstance(Type, String)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance(System.Type, System.String)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance(System.Type,System.String)
+    name: DoGetInstance
+    nameWithType: ServiceLocatorImplBase.DoGetInstance
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance(System.Type,System.String)
+    name: DoGetInstance
+    nameWithType: ServiceLocatorImplBase.DoGetInstance
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.DoGetInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance*
+  commentId: Overload:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance
+  name: DoGetInstance
+  nameWithType: NinjectServiceLocator.DoGetInstance
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetInstance
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances(System.Type)
+  commentId: M:CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances(System.Type)
+  parent: CommonServiceLocator.ServiceLocatorImplBase
+  isExternal: true
+  name: DoGetAllInstances(Type)
+  nameWithType: ServiceLocatorImplBase.DoGetAllInstances(Type)
+  fullName: CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances(System.Type)
+  spec.csharp:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances(System.Type)
+    name: DoGetAllInstances
+    nameWithType: ServiceLocatorImplBase.DoGetAllInstances
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances(System.Type)
+    name: DoGetAllInstances
+    nameWithType: ServiceLocatorImplBase.DoGetAllInstances
+    fullName: CommonServiceLocator.ServiceLocatorImplBase.DoGetAllInstances
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances*
+  commentId: Overload:Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances
+  name: DoGetAllInstances
+  nameWithType: NinjectServiceLocator.DoGetAllInstances
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator.DoGetAllInstances
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Object>
+  nameWithType: IEnumerable<Object>
+  fullName: System.Collections.Generic.IEnumerable<System.Object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

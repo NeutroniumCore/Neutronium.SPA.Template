@@ -1,0 +1,654 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.ViewModel.MainViewModel
+  commentId: T:Neutronium.SPA.ViewModel.MainViewModel
+  id: MainViewModel
+  parent: Neutronium.SPA.ViewModel
+  children:
+  - Neutronium.SPA.ViewModel.MainViewModel.#ctor
+  langs:
+  - csharp
+  - vb
+  name: MainViewModel
+  nameWithType: MainViewModel
+  fullName: Neutronium.SPA.ViewModel.MainViewModel
+  type: Class
+  source:
+    remote:
+      path: Neutronium.SPA/ViewModel/MainViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: MainViewModel
+    path: ../Neutronium.SPA/ViewModel/MainViewModel.cs
+    startLine: 2
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ViewModel
+  syntax:
+    content: 'public class MainViewModel : ViewModel, INotifyPropertyChanged, INotifyPropertyChanging'
+    content.vb: >-
+      Public Class MainViewModel
+          Inherits ViewModel
+          Implements INotifyPropertyChanged, INotifyPropertyChanging
+  inheritance:
+  - System.Object
+  - Neutronium.BuildingBlocks.ViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.ComponentModel.INotifyPropertyChanging
+  inheritedMembers:
+  - Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  - Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.SPA.ViewModel.MainViewModel.#ctor
+  commentId: M:Neutronium.SPA.ViewModel.MainViewModel.#ctor
+  id: '#ctor'
+  parent: Neutronium.SPA.ViewModel.MainViewModel
+  langs:
+  - csharp
+  - vb
+  name: MainViewModel()
+  nameWithType: MainViewModel.MainViewModel()
+  fullName: Neutronium.SPA.ViewModel.MainViewModel.MainViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.SPA/ViewModel/MainViewModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: .ctor
+    path: ../Neutronium.SPA/ViewModel/MainViewModel.cs
+    startLine: 4
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ViewModel
+  syntax:
+    content: public MainViewModel()
+    content.vb: Public Sub New
+  overload: Neutronium.SPA.ViewModel.MainViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Neutronium.SPA.ViewModel
+  commentId: N:Neutronium.SPA.ViewModel
+  name: Neutronium.SPA.ViewModel
+  nameWithType: Neutronium.SPA.ViewModel
+  fullName: Neutronium.SPA.ViewModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Neutronium.BuildingBlocks.ViewModel
+  commentId: T:Neutronium.BuildingBlocks.ViewModel
+  parent: Neutronium.BuildingBlocks
+  isExternal: true
+  name: ViewModel
+  nameWithType: ViewModel
+  fullName: Neutronium.BuildingBlocks.ViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanging
+  commentId: T:System.ComponentModel.INotifyPropertyChanging
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanging
+  nameWithType: INotifyPropertyChanging
+  fullName: System.ComponentModel.INotifyPropertyChanging
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1({T}@,{T},System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  definition: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyHasChanged(String)
+  nameWithType: ViewModel.PropertyHasChanged(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged(System.String)
+    name: PropertyHasChanged
+    nameWithType: ViewModel.PropertyHasChanged
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyHasChanged
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyIsChanging(String)
+  nameWithType: ViewModel.PropertyIsChanging(String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging(System.String)
+    name: PropertyIsChanging
+    nameWithType: ViewModel.PropertyIsChanging
+    fullName: Neutronium.BuildingBlocks.ViewModel.PropertyIsChanging
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: ViewModel.PropertyChanged
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanged
+- uid: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  commentId: E:Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+  parent: Neutronium.BuildingBlocks.ViewModel
+  isExternal: true
+  name: PropertyChanging
+  nameWithType: ViewModel.PropertyChanging
+  fullName: Neutronium.BuildingBlocks.ViewModel.PropertyChanging
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.BuildingBlocks
+  commentId: N:Neutronium.BuildingBlocks
+  isExternal: true
+  name: Neutronium.BuildingBlocks
+  nameWithType: Neutronium.BuildingBlocks
+  fullName: Neutronium.BuildingBlocks
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  commentId: M:Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+  isExternal: true
+  name: Set<T>(T, T, String)
+  nameWithType: ViewModel.Set<T>(T, T, String)
+  fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>(T, T, System.String)
+  nameWithType.vb: ViewModel.Set(Of T)(T, T, String)
+  fullName.vb: Neutronium.BuildingBlocks.ViewModel.Set(Of T)(T, T, System.String)
+  name.vb: Set(Of T)(T, T, String)
+  spec.csharp:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set<T>
+    nameWithType: ViewModel.Set<T>
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Neutronium.BuildingBlocks.ViewModel.Set``1(``0@,``0,System.String)
+    name: Set(Of T)
+    nameWithType: ViewModel.Set(Of T)
+    fullName: Neutronium.BuildingBlocks.ViewModel.Set(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Neutronium.SPA.ViewModel.MainViewModel.#ctor*
+  commentId: Overload:Neutronium.SPA.ViewModel.MainViewModel.#ctor
+  name: MainViewModel
+  nameWithType: MainViewModel.MainViewModel
+  fullName: Neutronium.SPA.ViewModel.MainViewModel.MainViewModel

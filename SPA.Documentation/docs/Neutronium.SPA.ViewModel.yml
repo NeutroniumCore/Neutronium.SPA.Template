@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.ViewModel
+  commentId: N:Neutronium.SPA.ViewModel
+  id: Neutronium.SPA.ViewModel
+  children:
+  - Neutronium.SPA.ViewModel.AboutViewModel
+  - Neutronium.SPA.ViewModel.MainViewModel
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.SPA.ViewModel
+  nameWithType: Neutronium.SPA.ViewModel
+  fullName: Neutronium.SPA.ViewModel
+  type: Namespace
+  assemblies:
+  - Neutronium SPA
+references:
+- uid: Neutronium.SPA.ViewModel.AboutViewModel
+  commentId: T:Neutronium.SPA.ViewModel.AboutViewModel
+  name: AboutViewModel
+  nameWithType: AboutViewModel
+  fullName: Neutronium.SPA.ViewModel.AboutViewModel
+- uid: Neutronium.SPA.ViewModel.MainViewModel
+  commentId: T:Neutronium.SPA.ViewModel.MainViewModel
+  name: MainViewModel
+  nameWithType: MainViewModel
+  fullName: Neutronium.SPA.ViewModel.MainViewModel

@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA
+  commentId: N:Neutronium.SPA
+  id: Neutronium.SPA
+  children:
+  - Neutronium.SPA.App
+  - Neutronium.SPA.ApplicationLifeCycle
+  - Neutronium.SPA.ApplicationViewModelBuilder
+  - Neutronium.SPA.DependencyInjectionConfiguration
+  - Neutronium.SPA.IDependencyInjectionConfiguration
+  - Neutronium.SPA.MainWindow
+  - Neutronium.SPA.RoutingConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.SPA
+  nameWithType: Neutronium.SPA
+  fullName: Neutronium.SPA
+  type: Namespace
+  assemblies:
+  - Neutronium SPA
+references:
+- uid: Neutronium.SPA.ApplicationLifeCycle
+  commentId: T:Neutronium.SPA.ApplicationLifeCycle
+  name: ApplicationLifeCycle
+  nameWithType: ApplicationLifeCycle
+  fullName: Neutronium.SPA.ApplicationLifeCycle
+- uid: Neutronium.SPA.ApplicationViewModelBuilder
+  commentId: T:Neutronium.SPA.ApplicationViewModelBuilder
+  name: ApplicationViewModelBuilder
+  nameWithType: ApplicationViewModelBuilder
+  fullName: Neutronium.SPA.ApplicationViewModelBuilder
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration
+  commentId: T:Neutronium.SPA.IDependencyInjectionConfiguration
+  parent: Neutronium.SPA
+  name: IDependencyInjectionConfiguration
+  nameWithType: IDependencyInjectionConfiguration
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration
+- uid: Neutronium.SPA.DependencyInjectionConfiguration
+  commentId: T:Neutronium.SPA.DependencyInjectionConfiguration
+  name: DependencyInjectionConfiguration
+  nameWithType: DependencyInjectionConfiguration
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration
+- uid: Neutronium.SPA.RoutingConfiguration
+  commentId: T:Neutronium.SPA.RoutingConfiguration
+  name: RoutingConfiguration
+  nameWithType: RoutingConfiguration
+  fullName: Neutronium.SPA.RoutingConfiguration
+- uid: Neutronium.SPA.App
+  commentId: T:Neutronium.SPA.App
+  name: App
+  nameWithType: App
+  fullName: Neutronium.SPA.App
+- uid: Neutronium.SPA.MainWindow
+  commentId: T:Neutronium.SPA.MainWindow
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: Neutronium.SPA.MainWindow
+- uid: Neutronium.SPA
+  commentId: N:Neutronium.SPA
+  name: Neutronium.SPA
+  nameWithType: Neutronium.SPA
+  fullName: Neutronium.SPA

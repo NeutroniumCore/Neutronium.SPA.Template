@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.ServiceLocator
+  commentId: N:Neutronium.SPA.ServiceLocator
+  id: Neutronium.SPA.ServiceLocator
+  children:
+  - Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: Neutronium.SPA.ServiceLocator
+  nameWithType: Neutronium.SPA.ServiceLocator
+  fullName: Neutronium.SPA.ServiceLocator
+  type: Namespace
+  assemblies:
+  - Neutronium SPA
+references:
+- uid: Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  commentId: T:Neutronium.SPA.ServiceLocator.NinjectServiceLocator
+  name: NinjectServiceLocator
+  nameWithType: NinjectServiceLocator
+  fullName: Neutronium.SPA.ServiceLocator.NinjectServiceLocator

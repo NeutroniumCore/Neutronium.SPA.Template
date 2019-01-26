@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.App
+  commentId: T:Neutronium.SPA.App
+  id: App
+  parent: Neutronium.SPA
+  children:
+  - Neutronium.SPA.App.#ctor
+  - Neutronium.SPA.App.GetJavascriptUIFrameworkManager
+  - Neutronium.SPA.App.OnExit(System.Windows.ExitEventArgs)
+  - Neutronium.SPA.App.OnStartUp(Neutronium.WPF.IHTMLEngineFactory)
+  - Neutronium.SPA.App.SetUp
+  - Neutronium.SPA.App.UpdateChromiumBrowserSettings(CfxBrowserSettings)
+  langs:
+  - csharp
+  - vb
+  name: App
+  nameWithType: App
+  fullName: Neutronium.SPA.App
+  type: Class
+  source:
+    remote:
+      path: Neutronium.SPA/App.xaml.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: App
+    path: ../Neutronium.SPA/App.xaml.cs
+    startLine: 13
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  summary: "\nInteraction logic for App.xaml\n"
+  example: []
+  syntax:
+    content: 'public class App : ChromiumFxWebBrowserApp'
+    content.vb: >-
+      Public Class App
+          Inherits ChromiumFxWebBrowserApp
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.SPA.App.SetUp
+  commentId: P:Neutronium.SPA.App.SetUp
+  id: SetUp
+  parent: Neutronium.SPA.App
+  langs:
+  - csharp
+  - vb
+  name: SetUp
+  nameWithType: App.SetUp
+  fullName: Neutronium.SPA.App.SetUp
+  type: Property
+  source:
+    remote:
+      path: Neutronium.SPA/App.xaml.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: SetUp
+    path: ../Neutronium.SPA/App.xaml.cs
+    startLine: 15
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public static SetUpViewModel SetUp { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+    content.vb: Public Shared ReadOnly Property SetUp As SetUpViewModel
+  overload: Neutronium.SPA.App.SetUp*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Neutronium.SPA.App.#ctor
+  commentId: M:Neutronium.SPA.App.#ctor
+  id: '#ctor'
+  parent: Neutronium.SPA.App
+  langs:
+  - csharp
+  - vb
+  name: App()
+  nameWithType: App.App()
+  fullName: Neutronium.SPA.App.App()
+  type: Constructor
+  source:
+    remote:
+      path: Neutronium.SPA/App.xaml.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: .ctor
+    path: ../Neutronium.SPA/App.xaml.cs
+    startLine: 20
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: public App()
+    content.vb: Public Sub New
+  overload: Neutronium.SPA.App.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Neutronium.SPA.App.GetJavascriptUIFrameworkManager
+  commentId: M:Neutronium.SPA.App.GetJavascriptUIFrameworkManager
+  id: GetJavascriptUIFrameworkManager
+  parent: Neutronium.SPA.App
+  langs:
+  - csharp
+  - vb
+  name: GetJavascriptUIFrameworkManager()
+  nameWithType: App.GetJavascriptUIFrameworkManager()
+  fullName: Neutronium.SPA.App.GetJavascriptUIFrameworkManager()
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App.xaml.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: GetJavascriptUIFrameworkManager
+    path: ../Neutronium.SPA/App.xaml.cs
+    startLine: 26
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: protected override IJavascriptFrameworkManager GetJavascriptUIFrameworkManager()
+    return:
+      type: Neutronium.Core.JavascriptFramework.IJavascriptFrameworkManager
+    content.vb: Protected Overrides Function GetJavascriptUIFrameworkManager As IJavascriptFrameworkManager
+  overload: Neutronium.SPA.App.GetJavascriptUIFrameworkManager*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Neutronium.SPA.App.UpdateChromiumBrowserSettings(CfxBrowserSettings)
+  commentId: M:Neutronium.SPA.App.UpdateChromiumBrowserSettings(CfxBrowserSettings)
+  id: UpdateChromiumBrowserSettings(CfxBrowserSettings)
+  parent: Neutronium.SPA.App
+  langs:
+  - csharp
+  - vb
+  name: UpdateChromiumBrowserSettings(CfxBrowserSettings)
+  nameWithType: App.UpdateChromiumBrowserSettings(CfxBrowserSettings)
+  fullName: Neutronium.SPA.App.UpdateChromiumBrowserSettings(CfxBrowserSettings)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App.xaml.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: UpdateChromiumBrowserSettings
+    path: ../Neutronium.SPA/App.xaml.cs
+    startLine: 31
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: protected override void UpdateChromiumBrowserSettings(CfxBrowserSettings browserSettings)
+    parameters:
+    - id: browserSettings
+      type: CfxBrowserSettings
+    content.vb: Protected Overrides Sub UpdateChromiumBrowserSettings(browserSettings As CfxBrowserSettings)
+  overload: Neutronium.SPA.App.UpdateChromiumBrowserSettings*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Neutronium.SPA.App.OnStartUp(Neutronium.WPF.IHTMLEngineFactory)
+  commentId: M:Neutronium.SPA.App.OnStartUp(Neutronium.WPF.IHTMLEngineFactory)
+  id: OnStartUp(Neutronium.WPF.IHTMLEngineFactory)
+  parent: Neutronium.SPA.App
+  langs:
+  - csharp
+  - vb
+  name: OnStartUp(IHTMLEngineFactory)
+  nameWithType: App.OnStartUp(IHTMLEngineFactory)
+  fullName: Neutronium.SPA.App.OnStartUp(Neutronium.WPF.IHTMLEngineFactory)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App.xaml.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: OnStartUp
+    path: ../Neutronium.SPA/App.xaml.cs
+    startLine: 37
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: protected override void OnStartUp(IHTMLEngineFactory factory)
+    parameters:
+    - id: factory
+      type: Neutronium.WPF.IHTMLEngineFactory
+    content.vb: Protected Overrides Sub OnStartUp(factory As IHTMLEngineFactory)
+  overload: Neutronium.SPA.App.OnStartUp*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Neutronium.SPA.App.OnExit(System.Windows.ExitEventArgs)
+  commentId: M:Neutronium.SPA.App.OnExit(System.Windows.ExitEventArgs)
+  id: OnExit(System.Windows.ExitEventArgs)
+  parent: Neutronium.SPA.App
+  langs:
+  - csharp
+  - vb
+  name: OnExit(ExitEventArgs)
+  nameWithType: App.OnExit(ExitEventArgs)
+  fullName: Neutronium.SPA.App.OnExit(System.Windows.ExitEventArgs)
+  type: Method
+  source:
+    remote:
+      path: Neutronium.SPA/App.xaml.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: OnExit
+    path: ../Neutronium.SPA/App.xaml.cs
+    startLine: 66
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA
+  syntax:
+    content: protected override void OnExit(ExitEventArgs e)
+    parameters:
+    - id: e
+      type: System.Windows.ExitEventArgs
+    content.vb: Protected Overrides Sub OnExit(e As ExitEventArgs)
+  overload: Neutronium.SPA.App.OnExit*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Neutronium.SPA
+  commentId: N:Neutronium.SPA
+  name: Neutronium.SPA
+  nameWithType: Neutronium.SPA
+  fullName: Neutronium.SPA
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.SPA.App.SetUp*
+  commentId: Overload:Neutronium.SPA.App.SetUp
+  name: SetUp
+  nameWithType: App.SetUp
+  fullName: Neutronium.SPA.App.SetUp
+- uid: Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+  commentId: T:Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+  parent: Neutronium.BuildingBlocks.SetUp
+  isExternal: true
+  name: SetUpViewModel
+  nameWithType: SetUpViewModel
+  fullName: Neutronium.BuildingBlocks.SetUp.SetUpViewModel
+- uid: Neutronium.BuildingBlocks.SetUp
+  commentId: N:Neutronium.BuildingBlocks.SetUp
+  isExternal: true
+  name: Neutronium.BuildingBlocks.SetUp
+  nameWithType: Neutronium.BuildingBlocks.SetUp
+  fullName: Neutronium.BuildingBlocks.SetUp
+- uid: Neutronium.SPA.App.#ctor*
+  commentId: Overload:Neutronium.SPA.App.#ctor
+  name: App
+  nameWithType: App.App
+  fullName: Neutronium.SPA.App.App
+- uid: Neutronium.SPA.App.GetJavascriptUIFrameworkManager*
+  commentId: Overload:Neutronium.SPA.App.GetJavascriptUIFrameworkManager
+  name: GetJavascriptUIFrameworkManager
+  nameWithType: App.GetJavascriptUIFrameworkManager
+  fullName: Neutronium.SPA.App.GetJavascriptUIFrameworkManager
+- uid: Neutronium.Core.JavascriptFramework.IJavascriptFrameworkManager
+  commentId: T:Neutronium.Core.JavascriptFramework.IJavascriptFrameworkManager
+  parent: Neutronium.Core.JavascriptFramework
+  isExternal: true
+  name: IJavascriptFrameworkManager
+  nameWithType: IJavascriptFrameworkManager
+  fullName: Neutronium.Core.JavascriptFramework.IJavascriptFrameworkManager
+- uid: Neutronium.Core.JavascriptFramework
+  commentId: N:Neutronium.Core.JavascriptFramework
+  isExternal: true
+  name: Neutronium.Core.JavascriptFramework
+  nameWithType: Neutronium.Core.JavascriptFramework
+  fullName: Neutronium.Core.JavascriptFramework
+- uid: Neutronium.SPA.App.UpdateChromiumBrowserSettings*
+  commentId: Overload:Neutronium.SPA.App.UpdateChromiumBrowserSettings
+  name: UpdateChromiumBrowserSettings
+  nameWithType: App.UpdateChromiumBrowserSettings
+  fullName: Neutronium.SPA.App.UpdateChromiumBrowserSettings
+- uid: CfxBrowserSettings
+  commentId: '!:CfxBrowserSettings'
+  isExternal: true
+  name: CfxBrowserSettings
+  nameWithType: CfxBrowserSettings
+  fullName: CfxBrowserSettings
+- uid: Neutronium.SPA.App.OnStartUp*
+  commentId: Overload:Neutronium.SPA.App.OnStartUp
+  name: OnStartUp
+  nameWithType: App.OnStartUp
+  fullName: Neutronium.SPA.App.OnStartUp
+- uid: Neutronium.WPF.IHTMLEngineFactory
+  commentId: T:Neutronium.WPF.IHTMLEngineFactory
+  parent: Neutronium.WPF
+  isExternal: true
+  name: IHTMLEngineFactory
+  nameWithType: IHTMLEngineFactory
+  fullName: Neutronium.WPF.IHTMLEngineFactory
+- uid: Neutronium.WPF
+  commentId: N:Neutronium.WPF
+  isExternal: true
+  name: Neutronium.WPF
+  nameWithType: Neutronium.WPF
+  fullName: Neutronium.WPF
+- uid: Neutronium.SPA.App.OnExit*
+  commentId: Overload:Neutronium.SPA.App.OnExit
+  name: OnExit
+  nameWithType: App.OnExit
+  fullName: Neutronium.SPA.App.OnExit
+- uid: System.Windows.ExitEventArgs
+  commentId: T:System.Windows.ExitEventArgs
+  parent: System.Windows
+  isExternal: true
+  name: ExitEventArgs
+  nameWithType: ExitEventArgs
+  fullName: System.Windows.ExitEventArgs
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows

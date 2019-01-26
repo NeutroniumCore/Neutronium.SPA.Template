@@ -1,0 +1,463 @@
+### YamlMime:ManagedReference
+items:
+- uid: Neutronium.SPA.ViewModel.AboutViewModel
+  commentId: T:Neutronium.SPA.ViewModel.AboutViewModel
+  id: AboutViewModel
+  parent: Neutronium.SPA.ViewModel
+  children:
+  - Neutronium.SPA.ViewModel.AboutViewModel.Descriptions
+  - Neutronium.SPA.ViewModel.AboutViewModel.Information
+  langs:
+  - csharp
+  - vb
+  name: AboutViewModel
+  nameWithType: AboutViewModel
+  fullName: Neutronium.SPA.ViewModel.AboutViewModel
+  type: Class
+  source:
+    remote:
+      path: Neutronium.SPA/ViewModel/AboutModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: AboutViewModel
+    path: ../Neutronium.SPA/ViewModel/AboutModel.cs
+    startLine: 4
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ViewModel
+  syntax:
+    content: public class AboutViewModel
+    content.vb: Public Class AboutViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Neutronium.SPA.ViewModel.AboutViewModel.Information
+  commentId: P:Neutronium.SPA.ViewModel.AboutViewModel.Information
+  id: Information
+  parent: Neutronium.SPA.ViewModel.AboutViewModel
+  langs:
+  - csharp
+  - vb
+  name: Information
+  nameWithType: AboutViewModel.Information
+  fullName: Neutronium.SPA.ViewModel.AboutViewModel.Information
+  type: Property
+  source:
+    remote:
+      path: Neutronium.SPA/ViewModel/AboutModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: Information
+    path: ../Neutronium.SPA/ViewModel/AboutModel.cs
+    startLine: 6
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ViewModel
+  syntax:
+    content: public ApplicationInformation Information { get; }
+    parameters: []
+    return:
+      type: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+    content.vb: Public ReadOnly Property Information As ApplicationInformation
+  overload: Neutronium.SPA.ViewModel.AboutViewModel.Information*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Neutronium.SPA.ViewModel.AboutViewModel.Descriptions
+  commentId: P:Neutronium.SPA.ViewModel.AboutViewModel.Descriptions
+  id: Descriptions
+  parent: Neutronium.SPA.ViewModel.AboutViewModel
+  langs:
+  - csharp
+  - vb
+  name: Descriptions
+  nameWithType: AboutViewModel.Descriptions
+  fullName: Neutronium.SPA.ViewModel.AboutViewModel.Descriptions
+  type: Property
+  source:
+    remote:
+      path: Neutronium.SPA/ViewModel/AboutModel.cs
+      branch: master
+      repo: https://github.com/NeutroniumCore/Neutronium.SPA.Template.git
+    id: Descriptions
+    path: ../Neutronium.SPA/ViewModel/AboutModel.cs
+    startLine: 8
+  assemblies:
+  - Neutronium SPA
+  namespace: Neutronium.SPA.ViewModel
+  syntax:
+    content: public string[] Descriptions { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property Descriptions As String()
+  overload: Neutronium.SPA.ViewModel.AboutViewModel.Descriptions*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Neutronium.SPA.ViewModel
+  commentId: N:Neutronium.SPA.ViewModel
+  name: Neutronium.SPA.ViewModel
+  nameWithType: Neutronium.SPA.ViewModel
+  fullName: Neutronium.SPA.ViewModel
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Neutronium.SPA.ViewModel.AboutViewModel.Information*
+  commentId: Overload:Neutronium.SPA.ViewModel.AboutViewModel.Information
+  name: Information
+  nameWithType: AboutViewModel.Information
+  fullName: Neutronium.SPA.ViewModel.AboutViewModel.Information
+- uid: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  commentId: T:Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+  parent: Neutronium.BuildingBlocks.Application.ViewModels
+  isExternal: true
+  name: ApplicationInformation
+  nameWithType: ApplicationInformation
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels.ApplicationInformation
+- uid: Neutronium.BuildingBlocks.Application.ViewModels
+  commentId: N:Neutronium.BuildingBlocks.Application.ViewModels
+  isExternal: true
+  name: Neutronium.BuildingBlocks.Application.ViewModels
+  nameWithType: Neutronium.BuildingBlocks.Application.ViewModels
+  fullName: Neutronium.BuildingBlocks.Application.ViewModels
+- uid: Neutronium.SPA.ViewModel.AboutViewModel.Descriptions*
+  commentId: Overload:Neutronium.SPA.ViewModel.AboutViewModel.Descriptions
+  name: Descriptions
+  nameWithType: AboutViewModel.Descriptions
+  fullName: Neutronium.SPA.ViewModel.AboutViewModel.Descriptions
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
