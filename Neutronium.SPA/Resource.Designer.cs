@@ -194,32 +194,5 @@ namespace Neutronium.SPA {
                 return ResourceManager.GetString("Restart", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to To Do.
-        /// </summary>
-        internal static string ToDo {
-            get {
-                return ResourceManager.GetString("ToDo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ToDo List.
-        /// </summary>
-        internal static string ToDoList {
-            get {
-                return ResourceManager.GetString("ToDoList", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to What needs to be done?.
-        /// </summary>
-        internal static string WhatNeedsToBeDone {
-            get {
-                return ResourceManager.GetString("WhatNeedsToBeDone", resourceCulture);
-            }
-        }
     }
 }
