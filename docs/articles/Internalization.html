@@ -5,16 +5,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Neutronium.SPA.Template </title>
+    <title>Internalization </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Neutronium.SPA.Template ">
+    <meta name="title" content="Internalization ">
     <meta name="generator" content="docfx 2.40.8.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,30 +57,33 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="internalization">Internalization</h1>
 
-<p align="center"><img width="100" src="https://raw.githubusercontent.com/NeutroniumCore/neutronium-vue/master/template/src/assets/logo.png"></p>
-<h1 align="center">Neutronium.SPA.Template</h1>
-<p><a href="https://ci.appveyor.com/project/David-Desmaisons/neutronium-spa-template"><img src="https://img.shields.io/appveyor/ci/David-Desmaisons/neutronium-spa-template.svg?maxAge=2592000" alt="Build status"></a>
-<a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/LICENSE"><img src="https://img.shields.io/github/license/NeutroniumCore/Neutronium.SPA.Template.svg" alt="MIT License"></a></p>
-<h2 id="description">Description</h2>
-<p>This project is a template application for Neutronium Vue project.<br>
-It is built on the top of <a href="https://vuetifyjs.com">Vuetifyjs</a> material component framework.<br>
-It uses <a href="">Neutronium.BuildingBlocks</a> and <a href="">Neutronuim vue-cli plugin</a> as an infrastructure.</p>
-<h2 id="built-with">Built with:</h2>
-<p style="margin-left:100px;">
-<a href="https://vuetifyjs.com">
-<img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" height="50px">
-</a>
-<a href="https://github.com/NeutroniumCore/Neutronium">
-<img src="https://raw.githubusercontent.com/NeutroniumCore/neutronium-vue/master/template/src/assets/logo.png" height="50px">
-</a>
-<a href="https://vuejs.org">
-<img src="https://vuejs.org/images/logo.png" height="50px">
-</a>
-</p>
+<h2 id="using-internalization">Using internalization</h2>
+<p><a href="https://kazupon.github.io/vue-i18n/"><code>vue-i18n</code></a> is used as a library to internalize messages.</p>
+<p>Resource.resx file is used on the C# side and transformed by <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/View/src/message.tt">message.tt</a> into a <code>.json</code> file that is used by <code>vue-i18n</code> as resource.<br></p>
+<p>For example, to reference <code>About1</code> key defined as below:
+<img src="../images/resource.png"><br></p>
+<p>Just do:</p>
+<pre><code class="lang-HTML">&lt;v-list-tile-title v-text=&quot;$t('Resource.About1')&quot;&gt;&lt;/v-list-tile-title&gt;
+</code></pre>
+<h2 id="build">Build</h2>
+<p>After changing resources, you had to</p>
+<ul>
+<li>Rebuild the solution</li>
+<li>Execute &quot;Run Custom Tool&quot; in order to regenerate <code>message.json</code><br>
+<img width="400px" src="../images/screen-6.png"><br></li>
+</ul>
 </article>
           </div>
           
@@ -89,7 +92,7 @@ It uses <a href="">Neutronium.BuildingBlocks</a> and <a href="">Neutronuim vue-c
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/SPA.Documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/SPA.Documentation/articles/Internalization.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -115,8 +118,8 @@ It uses <a href="">Neutronium.BuildingBlocks</a> and <a href="">Neutronuim vue-c
       </footer>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

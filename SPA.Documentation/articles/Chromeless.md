@@ -1,10 +1,8 @@
-<p align="center"><img width="100" src="https://raw.githubusercontent.com/NeutroniumCore/neutronium-vue/master/template/src/assets/logo.png"></p>
-<h1 align="center">Neutronium.SPA.Template</h1>
-
-## Chromeless
+# Chromeless
 
 To render a chromeless window, with full behavior Neutronium.SPA.Demo 
-1) uses Neutronium built-in chromeless behavior on the main window to set-up WPF behavior.
+
+## 1) Uses Neutronium built-in chromeless behavior on the main window to set-up WPF behavior.
 
 ```XML
  <xmlns:WPF="clr-namespace:Neutronium.WPF;assembly=Neutronium.WPF" x:Class="Neutronium.SPA.Demo.MainWindow"
@@ -15,7 +13,7 @@ To render a chromeless window, with full behavior Neutronium.SPA.Demo
         <WPF:Chromeless />
     </i:Interaction.Behaviors>
 ```
-2) uses [`-webkit-app-region` CSS property](https://developer.chrome.com/apps/app_window) to define draggable zone on the HTML window:
+## 2) Uses [`-webkit-app-region` CSS property](https://developer.chrome.com/apps/app_window) to define draggable zone on the HTML window:
 
 ```CSS
 #top-menu > div{
@@ -27,7 +25,9 @@ To render a chromeless window, with full behavior Neutronium.SPA.Demo
 }
 ```
 
-3) uses a dedicated Vue.js component: [topMenu.vue](../Neutronium.SPA.Demo/View/Main/src/components/topMenu.vue) bound to a WindowViewModel to allow to minimize/maximize/close the corresponding window.
+* Tips: you need to add ` -webkit-app-region: no-drag;` property for all clickable elements of the application if they could be displayed in front of the top-menu. 
+
+## 3) Uses a dedicated Vue.js component: [topMenu.vue](https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/View/src/components/topMenu.vue) bound to a WindowViewModel to allow to minimize/maximize/close the corresponding window.
 
 ```HTML
 <v-toolbar id="top-menu"  app >
@@ -43,5 +43,3 @@ To render a chromeless window, with full behavior Neutronium.SPA.Demo
 
 </v-toolbar>
 ```
-
-Back to [README](../README.md)

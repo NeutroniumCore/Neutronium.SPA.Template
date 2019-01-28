@@ -3,6 +3,9 @@ using Neutronium.Core.Navigation.Routing;
 
 namespace Neutronium.SPA
 {
+    /// <summary>
+    /// Configure Routing
+    /// </summary>
     public class RoutingConfiguration
     {
         public static IRouterSolver Register()
@@ -12,6 +15,10 @@ namespace Neutronium.SPA
             return router;
         }
 
+        /// <summary>
+        /// Build the route. Add different logic here if needed.
+        /// </summary>
+        /// <param name="routeBuilder"></param>
         private static void BuildRoutes(IRouterBuilder routeBuilder) 
         {
             var convention = routeBuilder.GetTemplateConvention("{vm}");

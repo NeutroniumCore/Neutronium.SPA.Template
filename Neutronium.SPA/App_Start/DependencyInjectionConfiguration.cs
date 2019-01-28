@@ -11,6 +11,9 @@ using Ninject;
 
 namespace Neutronium.SPA
 {
+    /// <summary>
+    /// RegisterSingleton dependency injection for the application
+    /// </summary>
     public class DependencyInjectionConfiguration: IDependencyInjectionConfiguration
     {
         private readonly StandardKernel _Kernel;
@@ -24,11 +27,27 @@ namespace Neutronium.SPA
             _ServiceLocator = new Lazy<IServiceLocator>(() => new NinjectServiceLocator(_Kernel));
         }
 
+        /// <summary>
+        /// Returns an instance of the serviceLocator
+        /// </summary>
+        /// <returns></returns>
         public Lazy<IServiceLocator> GetServiceLocator() => _ServiceLocator;
 
-        public void Register<T>(T implementation) => _Kernel.Bind<T>().ToConstant(implementation);
+        /// <summary>
+        /// RegisterSingleton an interface implementation as a singleton
+        /// </summary>
+        /// <typeparam name="T">Interface to register</typeparam>
+        /// <param name="implementation">Singleton to register</param>
+        public void RegisterSingleton<T>(T implementation) => _Kernel.Bind<T>().ToConstant(implementation);
 
-        public static void RegisterDependency(IKernel kernel)
+        /// <summary>
+        /// RegisterSingleton application injection dependency.
+        /// Should be used to add more binding between class to interface.
+        /// </summary>
+        /// <param name="kernel">
+        /// application Ninject kernel
+        /// </param>
+        private static void RegisterDependency(IKernel kernel)
         {
             var window = System.Windows.Application.Current.MainWindow;
             var application = new WpfApplication(window);

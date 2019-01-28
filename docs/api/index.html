@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PLACEHOLDER </title>
+    <title>Project structure </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PLACEHOLDER ">
+    <meta name="title" content="Project structure ">
     <meta name="generator" content="docfx 2.40.8.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,9 +67,34 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="placeholder">PLACEHOLDER</h1>
+<h1 id="project-structure">Project structure</h1>
 
-<p>TODO: Add .NET projects to the <em>src</em> folder and run <code>docfx</code> to generate <strong>REAL</strong> <em>API Documentation</em>!</p>
+<pre><code class="lang-bash">├── App_Start
+│   ├── ServiceLocator
+│   │   └── NinjectServiceLocator.cs
+│   ├── ApplicationLifeCycle.cs
+│   ├── ApplicationViewModelBuilder.cs
+│   ├── DependencyInjectionConfiguration.cs
+│   ├── IDependencyInjectionConfiguration.cs
+│   └──RoutingConfiguration.cs
+├── Content
+│   └── logo.png
+├── View
+│   └── ....
+├── ViewModel
+│   ├── AboutViewModel.cs
+│   └── MainViewModel.cs
+</code></pre>
+<ul>
+<li><code>App_Start</code> contains all files linked to application bootstrapping.
+<ul>
+<li>Alter <a href="./Neutronium.SPA.ApplicationLifeCycle.html">ApplicationLifeCycle</a> to add behavior to the application</li>
+<li>Alter <a href="Neutronium.SPA.DependencyInjectionConfiguration.html">DependencyInjectionConfiguration</a> to alter Application dependency injection</li>
+</ul>
+</li>
+<li><code>View</code> contains all HTML,CSS, javascript files</li>
+<li><code>ViewModel</code> contains all application main viewModels (viewModel associated with pages)</li>
+</ul>
 </article>
           </div>
           

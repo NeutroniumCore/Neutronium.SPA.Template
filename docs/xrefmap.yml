@@ -239,35 +239,22 @@ references:
   isSpec: "True"
   fullName: Neutronium.SPA.DependencyInjectionConfiguration.GetServiceLocator
   nameWithType: DependencyInjectionConfiguration.GetServiceLocator
-- uid: Neutronium.SPA.DependencyInjectionConfiguration.Register*
-  name: Register
-  href: api/Neutronium.SPA.DependencyInjectionConfiguration.html#Neutronium_SPA_DependencyInjectionConfiguration_Register_
-  commentId: Overload:Neutronium.SPA.DependencyInjectionConfiguration.Register
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.RegisterSingleton*
+  name: RegisterSingleton
+  href: api/Neutronium.SPA.DependencyInjectionConfiguration.html#Neutronium_SPA_DependencyInjectionConfiguration_RegisterSingleton_
+  commentId: Overload:Neutronium.SPA.DependencyInjectionConfiguration.RegisterSingleton
   isSpec: "True"
-  fullName: Neutronium.SPA.DependencyInjectionConfiguration.Register
-  nameWithType: DependencyInjectionConfiguration.Register
-- uid: Neutronium.SPA.DependencyInjectionConfiguration.Register``1(``0)
-  name: Register<T>(T)
-  href: api/Neutronium.SPA.DependencyInjectionConfiguration.html#Neutronium_SPA_DependencyInjectionConfiguration_Register__1___0_
-  commentId: M:Neutronium.SPA.DependencyInjectionConfiguration.Register``1(``0)
-  name.vb: Register(Of T)(T)
-  fullName: Neutronium.SPA.DependencyInjectionConfiguration.Register<T>(T)
-  fullName.vb: Neutronium.SPA.DependencyInjectionConfiguration.Register(Of T)(T)
-  nameWithType: DependencyInjectionConfiguration.Register<T>(T)
-  nameWithType.vb: DependencyInjectionConfiguration.Register(Of T)(T)
-- uid: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency(Ninject.IKernel)
-  name: RegisterDependency(IKernel)
-  href: api/Neutronium.SPA.DependencyInjectionConfiguration.html#Neutronium_SPA_DependencyInjectionConfiguration_RegisterDependency_Ninject_IKernel_
-  commentId: M:Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency(Ninject.IKernel)
-  fullName: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency(Ninject.IKernel)
-  nameWithType: DependencyInjectionConfiguration.RegisterDependency(IKernel)
-- uid: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency*
-  name: RegisterDependency
-  href: api/Neutronium.SPA.DependencyInjectionConfiguration.html#Neutronium_SPA_DependencyInjectionConfiguration_RegisterDependency_
-  commentId: Overload:Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency
-  isSpec: "True"
-  fullName: Neutronium.SPA.DependencyInjectionConfiguration.RegisterDependency
-  nameWithType: DependencyInjectionConfiguration.RegisterDependency
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.RegisterSingleton
+  nameWithType: DependencyInjectionConfiguration.RegisterSingleton
+- uid: Neutronium.SPA.DependencyInjectionConfiguration.RegisterSingleton``1(``0)
+  name: RegisterSingleton<T>(T)
+  href: api/Neutronium.SPA.DependencyInjectionConfiguration.html#Neutronium_SPA_DependencyInjectionConfiguration_RegisterSingleton__1___0_
+  commentId: M:Neutronium.SPA.DependencyInjectionConfiguration.RegisterSingleton``1(``0)
+  name.vb: RegisterSingleton(Of T)(T)
+  fullName: Neutronium.SPA.DependencyInjectionConfiguration.RegisterSingleton<T>(T)
+  fullName.vb: Neutronium.SPA.DependencyInjectionConfiguration.RegisterSingleton(Of T)(T)
+  nameWithType: DependencyInjectionConfiguration.RegisterSingleton<T>(T)
+  nameWithType.vb: DependencyInjectionConfiguration.RegisterSingleton(Of T)(T)
 - uid: Neutronium.SPA.IDependencyInjectionConfiguration
   name: IDependencyInjectionConfiguration
   href: api/Neutronium.SPA.IDependencyInjectionConfiguration.html
@@ -287,22 +274,22 @@ references:
   isSpec: "True"
   fullName: Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator
   nameWithType: IDependencyInjectionConfiguration.GetServiceLocator
-- uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register*
-  name: Register
-  href: api/Neutronium.SPA.IDependencyInjectionConfiguration.html#Neutronium_SPA_IDependencyInjectionConfiguration_Register_
-  commentId: Overload:Neutronium.SPA.IDependencyInjectionConfiguration.Register
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton*
+  name: RegisterSingleton
+  href: api/Neutronium.SPA.IDependencyInjectionConfiguration.html#Neutronium_SPA_IDependencyInjectionConfiguration_RegisterSingleton_
+  commentId: Overload:Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton
   isSpec: "True"
-  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register
-  nameWithType: IDependencyInjectionConfiguration.Register
-- uid: Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
-  name: Register<T>(T)
-  href: api/Neutronium.SPA.IDependencyInjectionConfiguration.html#Neutronium_SPA_IDependencyInjectionConfiguration_Register__1___0_
-  commentId: M:Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)
-  name.vb: Register(Of T)(T)
-  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.Register<T>(T)
-  fullName.vb: Neutronium.SPA.IDependencyInjectionConfiguration.Register(Of T)(T)
-  nameWithType: IDependencyInjectionConfiguration.Register<T>(T)
-  nameWithType.vb: IDependencyInjectionConfiguration.Register(Of T)(T)
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton
+  nameWithType: IDependencyInjectionConfiguration.RegisterSingleton
+- uid: Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton``1(``0)
+  name: RegisterSingleton<T>(T)
+  href: api/Neutronium.SPA.IDependencyInjectionConfiguration.html#Neutronium_SPA_IDependencyInjectionConfiguration_RegisterSingleton__1___0_
+  commentId: M:Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton``1(``0)
+  name.vb: RegisterSingleton(Of T)(T)
+  fullName: Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton<T>(T)
+  fullName.vb: Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton(Of T)(T)
+  nameWithType: IDependencyInjectionConfiguration.RegisterSingleton<T>(T)
+  nameWithType.vb: IDependencyInjectionConfiguration.RegisterSingleton(Of T)(T)
 - uid: Neutronium.SPA.MainWindow
   name: MainWindow
   href: api/Neutronium.SPA.MainWindow.html

@@ -9,11 +9,26 @@ using Neutronium.WPF.ViewModel;
 
 namespace Neutronium.SPA
 {
+    /// <summary>
+    /// Builder for application main viewModel.
+    /// Responsible for setting-up routing and dependency injection
+    /// </summary>
     public class ApplicationViewModelBuilder
     {
+        /// <summary>
+        /// Main application viewModel as built by the builder
+        /// </summary>
         public ApplicationViewModel<ApplicationInformation> ApplicationViewModel { get; }
+
         private readonly LifeCycleEventsRegister _LifeCycleEventsRegister;
 
+        /// <summary>
+        /// Instantiate the builder and create the ApplicationViewModel.
+        /// RegisterSingleton the application services to the dependency injection.
+        /// </summary>
+        /// <param name="wpfWindow">
+        /// Application main window
+        /// </param>
         public ApplicationViewModelBuilder(Window wpfWindow)
         {
             var window = new WindowViewModel(wpfWindow);
@@ -23,13 +38,13 @@ namespace Neutronium.SPA
 
             var navigation = new NavigationViewModel(serviceLocatorLazy, routeSolver);
 
-            serviceLocatorBuilder.Register<IWindowViewModel>(window);
-            serviceLocatorBuilder.Register<INavigator>(navigation);
-            serviceLocatorBuilder.Register(navigation);
+            serviceLocatorBuilder.RegisterSingleton<IWindowViewModel>(window);
+            serviceLocatorBuilder.RegisterSingleton<INavigator>(navigation);
+            serviceLocatorBuilder.RegisterSingleton(navigation);
 
             ApplicationViewModel = new ApplicationViewModel<ApplicationInformation>(window, navigation, new ApplicationInformation("Neutronium Demo", "David Desmaisons"));
-            serviceLocatorBuilder.Register<IMessageBox>(ApplicationViewModel);
-            serviceLocatorBuilder.Register<INotificationSender>(ApplicationViewModel);
+            serviceLocatorBuilder.RegisterSingleton<IMessageBox>(ApplicationViewModel);
+            serviceLocatorBuilder.RegisterSingleton<INotificationSender>(ApplicationViewModel);
 
             var serviceLocator = serviceLocatorLazy.Value;
             _LifeCycleEventsRegister = RegisterLifeCycleEvents(serviceLocator);

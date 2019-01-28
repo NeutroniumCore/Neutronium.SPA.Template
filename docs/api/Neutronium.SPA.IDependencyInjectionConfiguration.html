@@ -73,7 +73,8 @@
   
   <h1 id="Neutronium_SPA_IDependencyInjectionConfiguration" data-uid="Neutronium.SPA.IDependencyInjectionConfiguration" class="text-break">Interface IDependencyInjectionConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Dependency Injection used during bootstrap to encapsulate IOC implementation</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Neutronium.SPA.html">Neutronium.SPA</a></h6>
   <h6><strong>Assembly</strong>: Neutronium SPA.dll</h6>
@@ -88,11 +89,12 @@
     <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/new/master/apiSpec/new?filename=Neutronium_SPA_IDependencyInjectionConfiguration_GetServiceLocator.md&amp;value=---%0Auid%3A%20Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs/#L8">View Source</a>
+    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs/#L15">View Source</a>
   </span>
   <a id="Neutronium_SPA_IDependencyInjectionConfiguration_GetServiceLocator_" data-uid="Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator*"></a>
   <h4 id="Neutronium_SPA_IDependencyInjectionConfiguration_GetServiceLocator" data-uid="Neutronium.SPA.IDependencyInjectionConfiguration.GetServiceLocator">GetServiceLocator()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns an instance of the serviceLocator</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -115,18 +117,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/new/master/apiSpec/new?filename=Neutronium_SPA_IDependencyInjectionConfiguration_Register__1___0_.md&amp;value=---%0Auid%3A%20Neutronium.SPA.IDependencyInjectionConfiguration.Register%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/new/master/apiSpec/new?filename=Neutronium_SPA_IDependencyInjectionConfiguration_RegisterSingleton__1___0_.md&amp;value=---%0Auid%3A%20Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs/#L10">View Source</a>
+    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs/#L22">View Source</a>
   </span>
-  <a id="Neutronium_SPA_IDependencyInjectionConfiguration_Register_" data-uid="Neutronium.SPA.IDependencyInjectionConfiguration.Register*"></a>
-  <h4 id="Neutronium_SPA_IDependencyInjectionConfiguration_Register__1___0_" data-uid="Neutronium.SPA.IDependencyInjectionConfiguration.Register``1(``0)">Register&lt;T&gt;(T)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Neutronium_SPA_IDependencyInjectionConfiguration_RegisterSingleton_" data-uid="Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton*"></a>
+  <h4 id="Neutronium_SPA_IDependencyInjectionConfiguration_RegisterSingleton__1___0_" data-uid="Neutronium.SPA.IDependencyInjectionConfiguration.RegisterSingleton``1(``0)">RegisterSingleton&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>RegisterSingleton an interface implementation as a singleton</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Register&lt;T&gt;(T implementation)</code></pre>
+    <pre><code class="lang-csharp hljs">void RegisterSingleton&lt;T&gt;(T implementation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,7 +144,8 @@
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">implementation</span></td>
-        <td></td>
+        <td><p>Singleton to register</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,7 +160,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>Interface to register</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -171,7 +176,7 @@
                     <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/new/master/apiSpec/new?filename=Neutronium_SPA_IDependencyInjectionConfiguration.md&amp;value=---%0Auid%3A%20Neutronium.SPA.IDependencyInjectionConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/App_Start/IDependencyInjectionConfiguration.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

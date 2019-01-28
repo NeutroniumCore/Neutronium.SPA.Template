@@ -5,16 +5,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Neutronium.SPA.Template </title>
+    <title>Modes </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Neutronium.SPA.Template ">
+    <meta name="title" content="Modes ">
     <meta name="generator" content="docfx 2.40.8.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,30 +57,48 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="modes">Modes</h1>
 
-<p align="center"><img width="100" src="https://raw.githubusercontent.com/NeutroniumCore/neutronium-vue/master/template/src/assets/logo.png"></p>
-<h1 align="center">Neutronium.SPA.Template</h1>
-<p><a href="https://ci.appveyor.com/project/David-Desmaisons/neutronium-spa-template"><img src="https://img.shields.io/appveyor/ci/David-Desmaisons/neutronium-spa-template.svg?maxAge=2592000" alt="Build status"></a>
-<a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/LICENSE"><img src="https://img.shields.io/github/license/NeutroniumCore/Neutronium.SPA.Template.svg" alt="MIT License"></a></p>
-<h2 id="description">Description</h2>
-<p>This project is a template application for Neutronium Vue project.<br>
-It is built on the top of <a href="https://vuetifyjs.com">Vuetifyjs</a> material component framework.<br>
-It uses <a href="">Neutronium.BuildingBlocks</a> and <a href="">Neutronuim vue-cli plugin</a> as an infrastructure.</p>
-<h2 id="built-with">Built with:</h2>
-<p style="margin-left:100px;">
-<a href="https://vuetifyjs.com">
-<img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" height="50px">
-</a>
-<a href="https://github.com/NeutroniumCore/Neutronium">
-<img src="https://raw.githubusercontent.com/NeutroniumCore/neutronium-vue/master/template/src/assets/logo.png" height="50px">
-</a>
-<a href="https://vuejs.org">
-<img src="https://vuejs.org/images/logo.png" height="50px">
-</a>
-</p>
+<h2 id="application-modes">Application modes</h2>
+<p>This demo application has 3 modes:</p>
+<ul>
+<li><p>Live:</p>
+<pre><code>  Debug mode with hot-reload activated using file served by `npm run live` scripts.
+</code></pre>
+</li>
+<li><p>Dev:</p>
+<pre><code>  Debug mode using local files.
+</code></pre>
+</li>
+<li><p>Prod:</p>
+<pre><code>  No debug, using local files.
+</code></pre>
+</li>
+</ul>
+<p>Note: when running in live mode, it is not needed to run manually <code>npm run live</code> this will be called automatically by the application.</p>
+<h2 id="command-line-argument">Command line argument</h2>
+<p>Mode can be changed using command line argument:</p>
+<pre><code>    Usage:
+        --mode=live
+        -m=dev --url=http://localhost:9090/index.html
+        -u=http://localhost:9091/index.html
+
+    Options:
+        -m --mode=(live|dev|prod)    Set application mode.
+        -u --url=&lt;uri&gt;   Set view url
+</code></pre>
+<p><img src="../images/Configuration.png" alt="Screen shot"></p>
+<h3 id="section"></h3>
 </article>
           </div>
           
@@ -89,7 +107,7 @@ It uses <a href="">Neutronium.BuildingBlocks</a> and <a href="">Neutronuim vue-c
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/SPA.Documentation/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/SPA.Documentation/articles/Modes.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -115,8 +133,8 @@ It uses <a href="">Neutronium.BuildingBlocks</a> and <a href="">Neutronuim vue-c
       </footer>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

@@ -5,6 +5,9 @@ using Ninject;
 
 namespace Neutronium.SPA.ServiceLocator
 {
+    /// <summary>
+    /// ServiceLocator implementation for Ninject
+    /// </summary>
     public class NinjectServiceLocator : ServiceLocatorImplBase
     {
         public IKernel Kernel { get; }

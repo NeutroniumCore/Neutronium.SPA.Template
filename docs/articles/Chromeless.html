@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Neutronium.SPA.ViewModel
-   </title>
+    <title>Chromeless </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Neutronium.SPA.ViewModel
-   ">
+    <meta name="title" content="Chromeless ">
     <meta name="generator" content="docfx 2.40.8.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,21 +66,45 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Neutronium.SPA.ViewModel">
-  
-  <h1 id="Neutronium_SPA_ViewModel" data-uid="Neutronium.SPA.ViewModel" class="text-break">Namespace Neutronium.SPA.ViewModel
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="Neutronium.SPA.ViewModel.AboutViewModel.html">AboutViewModel</a></h4>
-      <section><p>ViewModel for the &quot;about&quot; route</p>
-</section>
-      <h4><a class="xref" href="Neutronium.SPA.ViewModel.MainViewModel.html">MainViewModel</a></h4>
-      <section><p>ViewModel for the &quot;main&quot; route</p>
-</section>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="chromeless">Chromeless</h1>
+
+<p>To render a chromeless window, with full behavior Neutronium.SPA.Demo</p>
+<h2 id="1-uses-neutronium-built-in-chromeless-behavior-on-the-main-window-to-set-up-wpf-behavior">1) Uses Neutronium built-in chromeless behavior on the main window to set-up WPF behavior.</h2>
+<pre><code class="lang-XML"> &lt;xmlns:WPF=&quot;clr-namespace:Neutronium.WPF;assembly=Neutronium.WPF&quot; x:Class=&quot;Neutronium.SPA.Demo.MainWindow&quot;
+        xmlns:i=&quot;clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity&quot;
+        BorderThickness=&quot;1&quot;
+        Title=&quot;MainWindow&quot;&gt;
+    &lt;i:Interaction.Behaviors&gt;
+        &lt;WPF:Chromeless /&gt;
+    &lt;/i:Interaction.Behaviors&gt;
+</code></pre>
+<h2 id="2-uses--webkit-app-region-css-property-to-define-draggable-zone-on-the-html-window">2) Uses <a href="https://developer.chrome.com/apps/app_window"><code>-webkit-app-region</code> CSS property</a> to define draggable zone on the HTML window:</h2>
+<pre><code class="lang-CSS">#top-menu &gt; div{
+  -webkit-app-region: drag;
+}
+
+#top-menu &gt; div &gt; button{
+  -webkit-app-region: no-drag;
+}
+</code></pre>
+<ul>
+<li>Tips: you need to add <code>-webkit-app-region: no-drag;</code> property for all clickable elements of the application if they could be displayed in front of the top-menu.</li>
+</ul>
+<h2 id="3-uses-a-dedicated-vuejs-component-topmenuvue-bound-to-a-windowviewmodel-to-allow-to-minimizemaximizeclose-the-corresponding-window">3) Uses a dedicated Vue.js component: <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/View/src/components/topMenu.vue">topMenu.vue</a> bound to a WindowViewModel to allow to minimize/maximize/close the corresponding window.</h2>
+<pre><code class="lang-HTML">&lt;v-toolbar id=&quot;top-menu&quot;  app &gt;
+
+    &lt;icon-button :command=&quot;window.Minimize&quot; icon=&quot;remove&quot;&gt;
+    &lt;/icon-button&gt;
+
+    &lt;icon-button :command=&quot;window.Normalize&quot; :icon=&quot;middleIcon&quot;&gt;
+    &lt;/icon-button&gt;
+
+    &lt;icon-button :command=&quot;window.Close&quot; icon=&quot;close&quot;&gt;
+    &lt;/icon-button&gt;
+
+&lt;/v-toolbar&gt;
+</code></pre>
 </article>
           </div>
           
@@ -90,6 +112,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/SPA.Documentation/articles/Chromeless.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

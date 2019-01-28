@@ -1,13 +1,14 @@
-﻿using System.Diagnostics;
-using System.Windows;
-using Chromium;
+﻿using Chromium;
 using Neutronium.BuildingBlocks.SetUp;
 using Neutronium.Core.JavascriptFramework;
 using Neutronium.JavascriptFramework.Vue;
 using Neutronium.WebBrowserEngine.ChromiumFx;
 using Neutronium.WPF;
+using System.Diagnostics;
+using System.Windows;
 
-namespace Neutronium.SPA {
+namespace Neutronium.SPA
+{
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
@@ -38,7 +39,7 @@ namespace Neutronium.SPA {
         protected override void OnStartUp(IHTMLEngineFactory factory)
         {
 #if DEBUG
-            SetUpForDeveloppment();
+            SetUpForDevelopment();
 #else
             SetUpViewModel.InitForProduction();
 #endif
@@ -46,7 +47,7 @@ namespace Neutronium.SPA {
             base.OnStartUp(factory);
         }
 
-        private void SetUpForDeveloppment()
+        private void SetUpForDevelopment()
         {
             _ApplicationSetUpBuilder.OnRunnerMessageReceived += OnRunnerMessageReceived;
             _ApplicationSetUpBuilder.OnArgumentParsingError += OnArgumentParsingError;
@@ -54,7 +55,7 @@ namespace Neutronium.SPA {
             Trace.WriteLine($"Starting with set-up: {SetUpViewModel}");
         }
 
-        private void OnRunnerMessageReceived(object sender,MessageEventArgs e)
+        private void OnRunnerMessageReceived(object sender, MessageEventArgs e)
         {
             Trace.WriteLine($"Npm runner log: {e.Message}");
         }

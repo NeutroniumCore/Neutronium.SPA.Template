@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Routing </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Routing ">
+    <meta name="generator" content="docfx 2.40.8.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="routing">Routing</h1>
+
+<p>Neutronium.SPA.Demo integrates with <a href="https://router.vuejs.org/en/">vue-router</a>.</p>
+<p>The main concept is that application is represented by an application ViewModel:</p>
+<pre><code class="lang-CSharp">public class ApplicationViewModel : Vm.Tools.ViewModel, IMessageBox 
+{
+    public IWindowViewModel Window { get; }
+    public NavigationViewModel Router { get; }
+
+    private object _CurrentViewModel;
+    public object CurrentViewModel 
+    {
+        get { return _CurrentViewModel; }
+        private set { Set(ref _CurrentViewModel, value); }
+    }
+    //...
+</code></pre>
+<p>The <code>CurrentViewModel</code> represents the ViewModel underlying the current page, it will be updated during navigation.
+Navigation API allows to associate viewModels to route, updating ViewModel when route is changing.<br>
+Dependency Injection container is used to instanciate the page ViewModel.</p>
+<h3 id="on-the-javascript-side">On the javascript side:</h3>
+<p>Routing is provided via an integration with <a href="https://router.vuejs.org/en/">vue-router</a>.</p>
+<p>Only named route are used in this integration. Routes are declared in the javascript file <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/Neutronium.SPA/View/src/routeDefinitions.js">routeDefinitions.js</a> :</p>
+<pre><code class="lang-javascript">import main from './pages/main.vue'
+import about from './pages/about.vue'
+
+const routeDefinitions = [
+    {name:'main', component: main, menu: {icon: 'fa-television'}},
+    {name:'about', component: about,  menu: {icon: 'info'}}
+]
+</code></pre>
+<p>This file associates route identified by their names with theit corresponding Vue component.<br></p>
+<p>Note that when route appears in the side menu, it should have a menu property with a icon value indicating which icon to display.</p>
+<p>It is possible to use router-link to navigate to a given route providing its name. In this case, the viewModel to be display will be instantiated by the C# API described below.</p>
+<h2 id="on-the-c-side">On the C# side</h2>
+<p>Navigation API provided in the <code>Neutronium.SPA.Demo.Application.Navigation</code> namespace allows to associate ViewModel type to specific route via the <a href="https://neutroniumcore.github.io/Neutronium.BuildingBlocks/application/Neutronium.BuildingBlocks.Application.Navigation.IRouterBuilder.html"><code>IRouterBuilder</code></a> interface.</p>
+<pre><code class="lang-cSharp">public interface IRouterBuilder
+{
+    /// &lt;summary&gt;
+    /// Register a file relative path to HTML file corresponding to a   viewmodel type 
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;type&quot;&gt;
+    /// Type of view model to register
+    /// &lt;/param&gt;
+    /// &lt;param name=&quot;routerName&quot;&gt;
+    /// router name
+    /// &lt;/param&gt;
+    /// &lt;param name=&quot;defaultType&quot;&gt;
+    /// true if the type should be considered as default 
+    /// for the corresponding route name
+    /// &lt;/param&gt;
+    /// &lt;returns&gt;
+    /// the router builder instance
+    /// &lt;/returns&gt;
+    IRouterBuilder Register(Type type, string routerName, bool defaultType = true);
+
+    /// &lt;summary&gt;
+    /// Register a file relative path to HTML file corresponding to a viewmodel type 
+    /// &lt;/summary&gt;
+    /// &lt;typeparam name=&quot;T&quot;&gt;
+    /// Type of view model to register
+    /// &lt;/typeparam&gt;
+    /// &lt;param name=&quot;routerName&quot;&gt;
+    /// router name
+    /// &lt;/param&gt;
+    /// &lt;param name=&quot;defaultType&quot;&gt;
+    ///  true if the type should be considered as default 
+    /// for the corresponding route name
+    /// &lt;/param&gt;
+    /// &lt;returns&gt;
+    /// the navigation builder instance
+    /// &lt;/returns&gt;
+    IRouterBuilder Register&lt;T&gt;(string routerName, bool defaultType = true);
+}
+</code></pre>
+<p>It is possible to register route manually but you can also use convention to avoid repetitive code see below <code>RoutingConfiguration</code>.</p>
+<p>This information is used by <a href="https://neutroniumcore.github.io/Neutronium.BuildingBlocks/application/Neutronium.BuildingBlocks.Application.Navigation.INavigator.html"><code>INavigator</code></a> interface implementation that allows to programmatically navigate.</p>
+<pre><code class="lang-CSharp">    public interface INavigator
+    {
+        Task Navigate(object viewModel, string routeName = null);
+
+        Task Navigate(string routeName);
+
+        Task Navigate&lt;T&gt;(NavigationContext&lt;T&gt; context = null);
+
+        Task Navigate(Type type, NavigationContext context = null);
+
+        event EventHandler&lt;RoutingEventArgs&gt; OnNavigating;
+
+        event EventHandler&lt;RoutedEventArgs&gt; OnNavigated;
+    }
+</code></pre>
+<p>When navigation is done without providing a ViewModel instance, the ViewModel type (given as an argument, or inferred from the route name) is used by dependency injection mechanism to instantiate the corresponding ViewModel.<br></p>
+<p><a href="../api/Neutronium.SPA.RoutingConfiguration.html">RoutingConfiguration</a> defines the convention for navigation: <br>
+all the types in the <code>Neutronium.SPA.Demo.ViewModel.Pages</code> namespace are associated with a route with name is the type without ViewModel postfix:</p>
+<p>VM: <code>AboutViewModel</code> =&gt; route: <code>about</code><br>
+VM: <code>MainViewModel</code> =&gt; route: <code>main</code></p>
+<p>Finally:<br>
+<a href="../api/Neutronium.SPA.ApplicationLifeCycle.html">ApplicationLifeCycle</a> is called during navigation on these two methods:</p>
+<pre><code class="lang-CSharp">  public void OnNavigating(RoutingEventArgs routingEvent)
+  
+  public void OnNavigated(RoutedEventArgs routedEvent)
+</code></pre>
+<p>This allows application potentially to cancel a navigation or to reroute application.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/NeutroniumCore/Neutronium.SPA.Template/blob/master/SPA.Documentation/articles/Routing.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
