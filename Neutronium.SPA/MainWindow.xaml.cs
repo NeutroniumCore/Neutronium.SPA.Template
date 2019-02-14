@@ -1,8 +1,10 @@
-﻿using System;
-using Neutronium.BuildingBlocks.Application.ViewModels;
+﻿using Neutronium.BuildingBlocks.Application.ViewModels;
 using Neutronium.BuildingBlocks.SetUp;
+using System;
+using System.Diagnostics;
+using Neutronium.BuildingBlocks.Application.Navigation;
 
-namespace Neutronium.SPA 
+namespace Neutronium.SPA
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -28,8 +30,25 @@ namespace Neutronium.SPA
         private ApplicationViewModel<ApplicationInformation> BuildApplicationViewModel()
         {
             _ApplicationViewModelBuilder = new ApplicationViewModelBuilder(this);
-            return _ApplicationViewModelBuilder.ApplicationViewModel;
+            var mainViewModel = _ApplicationViewModelBuilder.ApplicationViewModel;
+#if DEBUG
+            mainViewModel.Router.OnRoutingMessage += Router_OnRoutingMessage;
+#endif
+            return mainViewModel;
         }
+
+#if DEBUG
+        private void Router_OnRoutingMessage(object sender, RoutingMessageArgs e)
+        {
+            if (e.Type == MessageType.Error)
+            {
+                Trace.TraceError(e.Message);
+                return;
+            }
+
+            Trace.TraceInformation(e.Message);
+        }
+#endif
 
         protected override void OnClosed(EventArgs e)
         {
