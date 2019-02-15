@@ -15,10 +15,7 @@
             "Menu_main":"Main",
             "Ok":"Ok",
             "ProjectDescription":"Neutronium Vue SPA Template including IoC, routing and internalization",
-            "Restart":"Restart",
-            "ToDo":"To Do",
-            "ToDoList":"ToDo List",
-            "WhatNeedsToBeDone":"What needs to be done?"
+            "Restart":"Restart"
         }
     }
 }
