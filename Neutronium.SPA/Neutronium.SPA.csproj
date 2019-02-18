@@ -29,7 +29,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <!-- This is what will cause the templates to be transformed when the project is built (default is false) -->
-    <TransformOnBuild>false</TransformOnBuild>
+    <TransformOnBuild>true</TransformOnBuild>
     <!-- Set to true to force overwriting of read-only output files, e.g. if they're not checked out (default is false) -->
     <OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>
     <!-- Set to false to transform files even if the output appears to be up-to-date (default is true)  -->
@@ -385,7 +385,6 @@
       <RunNpmCmd1>"$(NodePath)\npm" $(NpmCommandInstall)</RunNpmCmd1>
       <RunNpmCmd2>"$(NodePath)\npm" $(NpmCommandBuild)</RunNpmCmd2>
     </PropertyGroup>
-    <CallTarget Targets="TransformAll" Condition="'$(Platform)'!='x64'"/>
     <Message Text="Npm Working Directory: '$(NpmWorkingDirectory)'" />
     <Exec Command="$(RunNpmCmd1)" WorkingDirectory="$(NpmWorkingDirectory)" CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)" />
     <Exec Command="$(RunNpmCmd2)" WorkingDirectory="$(NpmWorkingDirectory)" CustomErrorRegularExpression="(ERR!.*is not in the npm registry|Usage:)" />

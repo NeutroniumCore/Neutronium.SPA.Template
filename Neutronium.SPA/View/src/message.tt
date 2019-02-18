@@ -1,19 +1,16 @@
 ﻿<#@ template debug="false" hostspecific="true" language="C#" #>
 <#@ assembly name="System.Core" #>
+<#@ assembly name="System.Xml" #>
+<#@ assembly name="System.Xml.Linq" #>
 <#@ import namespace="System.Linq" #>
-<#@ import namespace="System.Globalization" #>
-<#@ import namespace="System.Resources" #>
-<#@ import namespace="System.Reflection" #>
 <#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Xml.Linq" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ output extension=".json" #>
 <# 
 	Langages = new [] { "en-US"};
 	Resources = new []{ "Resource" };
-	var path = this.Host.ResolveAssemblyReference("$(TargetPath)");
-	MainAssembly = Assembly.LoadFrom(path);
-	Namespace = MainAssembly.GetTypes().FirstOrDefault(t => t.Name == "App")?.Namespace;
 #>
 {
  <# var first = true;
@@ -42,10 +39,8 @@
 <#+
 private string[] Langages;
 private string[] Resources;
-private Assembly MainAssembly;
-private string Namespace;
 
-private void DisplayDictionary(IDictionary<string,string> dictionary){
+private void DisplayDictionary(IEnumerable<KeyValuePair<string,string>> dictionary){
 	var first = true;
 	foreach(var entry in dictionary){
 		if (!first){
@@ -57,9 +52,19 @@ private void DisplayDictionary(IDictionary<string,string> dictionary){
 	WriteLine("");
 }
 
-private IDictionary<string,string> GetDictionary(string resourceName, string langage){
-	var resourceManager = new ResourceManager($"{Namespace}.{resourceName}", MainAssembly);
-	var rs = resourceManager.GetResourceSet(new CultureInfo(langage), true, true);
-	return rs.Cast<DictionaryEntry>().OrderBy(entry =>entry.Key).ToDictionary(dicEntry => (string)dicEntry.Key, dicEntry => (string)dicEntry.Value);            
+private string GetPath(string resourceName, string langage){
+	var directory =  Path.Combine(this.Host.ResolvePath(""), "..\\..\\");
+	var path = Path.Combine(directory, $"{resourceName}.{langage}.resx");
+	return File.Exists(path) ? path : Path.Combine(directory, $"{resourceName}.resx");
+}
+
+private IEnumerable<KeyValuePair<string,string>> GetDictionary(string resourceName, string langage){
+	var path = GetPath(resourceName, langage);
+	var data = XElement.Load(path);
+	return data.Descendants("data").Select(el =>
+	{
+		var value = el.Descendants("value").First().Value;
+		return new KeyValuePair<string, string>(el.Attribute("name").Value, value);
+	});
 }
 #>
