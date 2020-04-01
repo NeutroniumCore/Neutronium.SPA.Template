@@ -19,7 +19,6 @@ const { router } = options;
 /*eslint no-unused-vars: ["error", { "args": "none" }]*/
 router.beforeEach((to, _, next) => {
   const name = to.name;
-  // || "main";
   import(`../../data/${name}/vm.cjson`)
     .then(module => {
       const newVm = updateVM(module.default);

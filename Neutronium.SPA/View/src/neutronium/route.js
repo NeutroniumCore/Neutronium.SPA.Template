@@ -20,11 +20,13 @@ const router = new Router({
   routes
 });
 
-const menu = routeDefinitions.filter(r => r.menu).map(({ name, menu }) => ({
-  title: `Resource.Menu_${name}`,
-  to: { name },
-  icon: menu.icon
-}));
+const menu = routeDefinitions
+  .filter(r => r.menu)
+  .map(({ name, menu }) => ({
+    title: `Resource.Menu_${name}`,
+    to: { name },
+    icon: menu.icon
+  }));
 
 function getRouterViewModel(router) {
   const app = router.app;

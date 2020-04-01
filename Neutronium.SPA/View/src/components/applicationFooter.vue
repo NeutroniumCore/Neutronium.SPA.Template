@@ -1,9 +1,6 @@
 <template>
-  <v-footer
-    :fixed="fixed"
-    app
-  >
-    <span class="footer-text">&copy; {{year}}</span>
+  <v-footer :fixed="fixed" app height="56">
+    <span class="footer-text">&copy; {{ year }}</span>
   </v-footer>
 </template>
 
@@ -25,7 +22,7 @@ export default {
 </script>
 
 <style>
-.footer-text{
+.footer-text {
   margin: 10px;
 }
 </style>

@@ -10,6 +10,7 @@ import Notifications from "vue-notification";
 
 import Vuetify, {
   VApp,
+  VAppBar,
   VAlert,
   VCard,
   VCardText,
@@ -24,17 +25,17 @@ import Vuetify, {
   VFlex,
   VLayout,
   VList,
-  VListTile,
-  VListTileTitle,
-  VListTileAction,
-  VListTileContent,
+  VListItem,
+  VListItemTitle,
+  VListItemAction,
+  VListItemContent,
   VBtn,
   VIcon,
   VImg,
   VToolbar,
   VDialog,
   VTextField,
-  VToolbarSideIcon,
+  VAppBarNavIcon,
   VToolbarTitle,
   VSpacer
 } from "vuetify/lib";
@@ -43,6 +44,7 @@ function install(Vue) {
   Vue.use(Vuetify, {
     components: {
       VApp,
+      VAppBar,
       VAlert,
       VCard,
       VCardText,
@@ -57,17 +59,17 @@ function install(Vue) {
       VFlex,
       VLayout,
       VList,
-      VListTile,
-      VListTileTitle,
-      VListTileAction,
-      VListTileContent,
+      VListItem,
+      VListItemTitle,
+      VListItemAction,
+      VListItemContent,
       VBtn,
       VIcon,
       VImg,
       VToolbar,
       VDialog,
       VTextField,
-      VToolbarSideIcon,
+      VAppBarNavIcon,
       VToolbarTitle,
       VSpacer
     }
@@ -85,9 +87,16 @@ function vueInstanceOption(vm) {
     messages // set locale messages
   });
 
+  const vuetify = new Vuetify({
+    theme: {
+      dark: true
+    }
+  });
+
   //Return vue global option here, such as vue-router, vue-i18n, mix-ins, ....
   return {
     router,
+    vuetify,
     i18n
   };
 }
