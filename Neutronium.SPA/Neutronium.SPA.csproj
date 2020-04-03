@@ -79,7 +79,7 @@
   <PropertyGroup>
     <NpmFile>$(MSBuildProjectDirectory)\View\package.json</NpmFile>
     <NpmCommandInstall>install --loglevel error</NpmCommandInstall>
-    <NpmCommandBuild>run build</NpmCommandBuild>
+    <NpmCommandBuild>run cached-build</NpmCommandBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <PlatformTarget>x64</PlatformTarget>
