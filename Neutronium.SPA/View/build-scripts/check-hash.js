@@ -1,7 +1,6 @@
-const { getHash } = require('./hash-builder');
+const { getSourceHash, getBuildHash } = require('./hash-builder');
+const { filePath} = require('./config');
 const fs = require('fs');
-
-const filePath = "./dist/hash.json";
 
 let data
 try {
@@ -12,11 +11,26 @@ catch (error) {
   process.exit(1);
 }
 
-const rootHash = JSON.parse(data).hash;
+const {hashSource, hashBuild} = JSON.parse(data);
 
-getHash().then(value => {
-  const returnValue = value.hash === rootHash ? 0 : 1;
-  process.exit(returnValue);
-}).catch(err =>{
-  process.exit(1);
-});
+async function checkHashes(){
+  try{
+    const build = await getBuildHash();
+    if (build!==hashBuild) {
+      console.log("build");
+      process.exit(1);
+    }
+    const source = await getSourceHash();
+    if (source!==hashSource) {
+      console.log("source");
+      process.exit(1);
+    }
+    console.log("same hashes doing nothing");
+    process.exit(0);
+  }
+  catch {
+    process.exit(1);
+  }
+}
+
+checkHashes();

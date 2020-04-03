@@ -1,16 +1,24 @@
-const { getHash } = require('./hash-builder');
+const { getSourceHash, getBuildHash } = require('./hash-builder');
+const { filePath } = require('./config');
+
 const fs = require('fs');
 
 async function saveHash() {
-  let hash;
+  let hashSource;
+  let hashBuild;
   try {
-    hash = await getHash();
+    hashSource = await getSourceHash();
+    hashBuild = await getBuildHash();
   }
   catch {
     console.log("Problem hash file not updated");
     return;
   }
-  fs.writeFile("./dist/hash.json", JSON.stringify(hash), function (err) {
+  const hash = {
+    hashSource,
+    hashBuild
+  }
+  fs.writeFile(filePath, JSON.stringify(hash), function (err) {
     if (err) {
       console.log("Problem hash file not updated");
       return;
