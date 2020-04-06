@@ -163,8 +163,8 @@
     <Reference Include="Neutronium.BuildingBlocks.ApplicationTools, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neutronium.BuildingBlocks.ApplicationTools.1.2.0\lib\net472\Neutronium.BuildingBlocks.ApplicationTools.dll</HintPath>
     </Reference>
-    <Reference Include="Neutronium.BuildingBlocks.SetUp, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neutronium.BuildingBlocks.SetUp.1.2.0\lib\net472\Neutronium.BuildingBlocks.SetUp.dll</HintPath>
+    <Reference Include="Neutronium.BuildingBlocks.SetUp, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neutronium.BuildingBlocks.SetUp.1.2.1\lib\net472\Neutronium.BuildingBlocks.SetUp.dll</HintPath>
     </Reference>
     <Reference Include="Neutronium.BuildingBlocks.Wpf, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neutronium.BuildingBlocks.Wpf.1.2.1\lib\net472\Neutronium.BuildingBlocks.Wpf.dll</HintPath>
