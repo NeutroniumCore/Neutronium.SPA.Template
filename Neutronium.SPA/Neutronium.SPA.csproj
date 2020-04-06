@@ -79,7 +79,7 @@
   <PropertyGroup>
     <NpmFile>$(MSBuildProjectDirectory)\View\package.json</NpmFile>
     <NpmCommandInstall>install --loglevel error</NpmCommandInstall>
-    <NpmCommandBuild>run cached-build</NpmCommandBuild>
+    <NpmCommandBuild>run build:cached</NpmCommandBuild>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <PlatformTarget>x64</PlatformTarget>
@@ -333,6 +333,10 @@
     <Content Include="View\.gitignore" />
     <Resource Include="View\src\assets\logo.png" />
     <Content Include="View\babel.config.js" />
+    <Content Include="View\build-scripts\check-hash.js" />
+    <Content Include="View\build-scripts\config.js" />
+    <Content Include="View\build-scripts\create-hash.js" />
+    <Content Include="View\build-scripts\hash-builder.js" />
     <Content Include="View\src\neutronium\entry.js" />
     <Content Include="View\src\neutronium\main.js" />
     <Content Include="View\src\neutronium\route.js" />

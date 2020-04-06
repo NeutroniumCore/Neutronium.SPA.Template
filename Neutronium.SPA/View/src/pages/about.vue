@@ -5,7 +5,7 @@
         <v-card>
           <v-img :src="require('../assets/logo.png')" height="200px" contain>
           </v-img>
-          <v-card-title primary-title>
+          <v-card-title primary-title class="about">
             <div>
               <h3 class="headline mb-0 blue--text">
                 {{ viewModel.Information.Name }} {{ $t("Resource.MadeBy") }}
@@ -57,4 +57,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.v-card__title.about {
+  word-break: normal;
+}
+</style>

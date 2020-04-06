@@ -10,14 +10,14 @@ async function saveHash() {
     hashSource = await getSourceHash();
     hashBuild = await getBuildHash();
   }
-  catch {
+  catch (exception) {
     console.log("Problem hash file not updated");
     return;
   }
   const hash = {
-    hashSource,
-    hashBuild
-  }
+      hashSource,
+      hashBuild
+  };
   fs.writeFile(filePath, JSON.stringify(hash), function (err) {
     if (err) {
       console.log("Problem hash file not updated");

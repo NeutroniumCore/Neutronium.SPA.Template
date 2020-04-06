@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve ./src/neutronium/main.js --open --port 9000",
     "build": "vue-cli-service build --entry ./src/neutronium/entry.js --modern && npm run create-hash",
-    "cached-build": "npm run check-hash || npm run build",
+    "build:cached": "npm run check-hash || npm run build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "live": "vue-cli-service serve ./src/neutronium/entry.js --port 8080 --mode integrated",
