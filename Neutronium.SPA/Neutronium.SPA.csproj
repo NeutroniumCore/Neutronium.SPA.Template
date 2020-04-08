@@ -51,7 +51,7 @@
     <NodePath>$(GlobalNodePath)</NodePath>
     <NodeModulePath>$(GlobalNodeModulePath)</NodeModulePath>
   </PropertyGroup>
-  <Target Name="EnsureNode">
+  <Target Name="EnsureNode" BeforeTargets="BeforeBuild">
     <PropertyGroup>
       <UnknownNodePath>Global NodeJS installation not found. Please set the 'NODEJS' environment variable for a global installation or set the 'LocalNodePath' property in your project file for a local installation.</UnknownNodePath>
       <InvalidGlobalNodePath>Invalid global node path.</InvalidGlobalNodePath>
@@ -309,11 +309,7 @@
     <None Include="View\src\components\sideMenu.vue" />
     <None Include="View\src\components\textButton.vue" />
     <None Include="View\src\components\topMenu.vue" />
-    <None Include="View\src\message.json">
-      <DependentUpon>message.tt</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </None>
+    <None Include="View\src\message.json" />
     <None Include="View\src\pages\about.vue" />
     <None Include="View\src\pages\main.vue" />
     <None Include="View\src\stylus\main.styl" />
@@ -337,6 +333,7 @@
     <Content Include="View\build-scripts\config.js" />
     <Content Include="View\build-scripts\create-hash.js" />
     <Content Include="View\build-scripts\hash-builder.js" />
+    <Content Include="View\build-scripts\message-updater.js" />
     <Content Include="View\src\neutronium\entry.js" />
     <Content Include="View\src\neutronium\main.js" />
     <Content Include="View\src\neutronium\route.js" />
@@ -346,10 +343,6 @@
     <Resource Include="View\public\favicon.ico" />
     <Content Include="View\public\index.html" />
     <Content Include="View\src\install.js" />
-    <Content Include="View\src\message.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>message.json</LastGenOutput>
-    </Content>
     <Content Include="View\src\routeDefinitions.js" />
     <Content Include="View\tests\unit\.eslintrc.js" />
     <Content Include="View\tests\unit\example.spec.js" />
@@ -378,7 +371,7 @@
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>-->
-  <Target Name="AfterBuild" DependsOnTargets="EnsureNode">
+  <Target Name="NpmBuild" DependsOnTargets="EnsureNode" BeforeTargets="BeforeBuild">
     <PropertyGroup>
       <NpmWorkingDirectory>$([System.IO.Path]::GetDirectoryName('$(NpmFile)'))</NpmWorkingDirectory>
       <RunNpmCmd1>"$(NodePath)\npm" $(NpmCommandInstall)</RunNpmCmd1>

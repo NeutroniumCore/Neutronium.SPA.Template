@@ -1,9 +1,10 @@
 const { hashElement } = require('folder-hash');
 const { fileName } = require('./config');
+const { messagePath } = require('./config');
 
 const optionsSource = {
   folders: { exclude: ['.*', 'node_modules', 'test_coverage', 'tests', 'data', 'build-scripts', 'dist'] },
-  files: { exclude: ['README.md'] }
+  files: { exclude: ['README.md', messagePath] }
 };
 
 const optionsDist = {
