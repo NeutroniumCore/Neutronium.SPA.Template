@@ -5,6 +5,7 @@ using Neutronium.BuildingBlocks.Application.Navigation;
 using Neutronium.BuildingBlocks.Application.ViewModels;
 using Neutronium.BuildingBlocks.Application.WindowServices;
 using Neutronium.MVVMComponents;
+using Neutronium.SPA.ViewModel.Common;
 using Neutronium.WPF.ViewModel;
 
 namespace Neutronium.SPA
@@ -42,7 +43,7 @@ namespace Neutronium.SPA
             serviceLocatorBuilder.RegisterSingleton<INavigator>(navigation);
             serviceLocatorBuilder.RegisterSingleton(navigation);
 
-            ApplicationViewModel = new ApplicationViewModel<ApplicationInformation>(window, navigation, new ApplicationInformation("Neutronium Demo", "David Desmaisons"));
+            ApplicationViewModel = new ApplicationViewModel<ApplicationInformation>(window, navigation, GlobalApplicationInformation.Information);
             serviceLocatorBuilder.RegisterSingleton<IMessageBox>(ApplicationViewModel);
             serviceLocatorBuilder.RegisterSingleton<INotificationSender>(ApplicationViewModel);
 

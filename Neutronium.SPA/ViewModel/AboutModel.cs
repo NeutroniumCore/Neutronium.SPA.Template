@@ -1,13 +1,14 @@
 ﻿using Neutronium.BuildingBlocks.Application.ViewModels;
+using Neutronium.SPA.ViewModel.Common;
 
 namespace Neutronium.SPA.ViewModel 
 {
     /// <summary>
     /// ViewModel for the "about" route
     /// </summary>
-    public class AboutViewModel 
+    public class AboutViewModel
     {
-        public ApplicationInformation Information { get; } = new ApplicationInformation("Neutronium Demo", "David Desmaisons");
+        public ApplicationInformation Information => GlobalApplicationInformation.Information;
 
         public string[] Descriptions { get; } =
         {

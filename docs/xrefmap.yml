@@ -469,6 +469,31 @@ references:
   isSpec: "True"
   fullName: Neutronium.SPA.ViewModel.AboutViewModel.Information
   nameWithType: AboutViewModel.Information
+- uid: Neutronium.SPA.ViewModel.Common
+  name: Neutronium.SPA.ViewModel.Common
+  href: api/Neutronium.SPA.ViewModel.Common.html
+  commentId: N:Neutronium.SPA.ViewModel.Common
+  fullName: Neutronium.SPA.ViewModel.Common
+  nameWithType: Neutronium.SPA.ViewModel.Common
+- uid: Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation
+  name: GlobalApplicationInformation
+  href: api/Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.html
+  commentId: T:Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation
+  fullName: Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation
+  nameWithType: GlobalApplicationInformation
+- uid: Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.Information
+  name: Information
+  href: api/Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.html#Neutronium_SPA_ViewModel_Common_GlobalApplicationInformation_Information
+  commentId: P:Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.Information
+  fullName: Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.Information
+  nameWithType: GlobalApplicationInformation.Information
+- uid: Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.Information*
+  name: Information
+  href: api/Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.html#Neutronium_SPA_ViewModel_Common_GlobalApplicationInformation_Information_
+  commentId: Overload:Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.Information
+  isSpec: "True"
+  fullName: Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.Information
+  nameWithType: GlobalApplicationInformation.Information
 - uid: Neutronium.SPA.ViewModel.MainViewModel
   name: MainViewModel
   href: api/Neutronium.SPA.ViewModel.MainViewModel.html

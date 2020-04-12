@@ -248,6 +248,7 @@
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\AboutModel.cs" />
+    <Compile Include="ViewModel\Common\GlobalApplicationInformation.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

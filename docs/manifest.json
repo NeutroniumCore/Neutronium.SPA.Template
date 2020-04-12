@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Neutronium.SPA.ApplicationViewModelBuilder.html",
-          "hash": "CDEJlVK5WPK4uyDMwKBq3g=="
+          "hash": "fnra/pthsSKcTmi7Id57zg=="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Neutronium.SPA.ViewModel.AboutViewModel.html",
-          "hash": "M3BPWntKxCk7cFa3genHXg=="
+          "hash": "Y1NT5sxR7dj1bDEcs2Ct/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Neutronium.SPA.ViewModel.Common.GlobalApplicationInformation.html",
+          "hash": "VPldSMR8Mm4DOHSJXm/hfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Neutronium.SPA.ViewModel.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Neutronium.SPA.ViewModel.Common.html",
+          "hash": "wLBFqh2REPosSFMLjGxmxQ=="
         }
       },
       "is_incremental": false,
@@ -180,7 +204,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Fm6pb+UaTNMCjnDBY/IK6A=="
+          "hash": "2LcwjgVVkymfYo8aUz9ghw=="
         }
       },
       "is_incremental": false,
@@ -403,16 +427,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 13,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 8,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 15,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
